@@ -1,276 +1,154 @@
 import { useState } from 'react';
 
-// Create a style object for our CSS
-const styles = {
-  // General styles
-  app: {
-    minHeight: '100vh',
-    backgroundColor: '#f3f4f6',
-    fontFamily: 'Arial, sans-serif',
-    display: 'flex',
-    flexDirection: 'column'
-  },
-  
-  // Navigation styles
-  navbar: {
-    backgroundColor: '#1f2937',
-    color: 'white',
-    padding: '16px',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-    width: '100%'
-  },
-  navContainer: {
-    width: '100%',
-    margin: '0 auto',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-  navItems: {
-    display: 'flex',
-    gap: '24px'
-  },
-  navButton: {
-    padding: '8px 12px',
-    borderRadius: '4px',
-    background: 'transparent',
-    color: 'white',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'background-color 0.2s'
-  },
-  navButtonActive: {
-    backgroundColor: '#4b5563',
-    fontWeight: '600'
-  },
-  navName: {
-    fontWeight: '600',
-    fontSize: '18px'
-  },
-  
-  // Main content styles
-  main: {
-    flex: '1',
-    width: '100%'
-  },
-  container: {
-    width: '100%',
-    margin: '0 auto',
-    padding: '20px 16px'
-  },
-  contentCentered: {
-    width: '100%',
-    margin: '0 auto',
-    textAlign: 'center'
-  },
-  pageTitle: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    marginBottom: '24px',
-    textAlign: 'center',
-    color: '#1f2937'
-  },
-  homeTitle: {
-    fontSize: '36px',
-    fontWeight: 'bold',
-    marginBottom: '24px',
-    color: '#1f2937'
-  },
-  
-  // Card styles
-  card: {
-    backgroundColor: 'white',
-    borderRadius: '8px',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-    padding: '20px',
-    width: '100%'
-  },
-  cardText: {
-    fontSize: '18px',
-    color: '#4b5563',
-    marginBottom: '32px'
-  },
-  profilePhoto: {
-    width: '192px',
-    height: '192px',
-    borderRadius: '50%',
-    backgroundColor: '#d1d5db',
-    margin: '0 auto 24px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#6b7280'
-  },
-  paragraph: {
-    color: '#4b5563',
-    marginBottom: '24px'
-  },
-  buttonContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '16px'
-  },
-  primaryButton: {
-    backgroundColor: '#2563eb',
-    color: 'white',
-    padding: '8px 24px',
-    borderRadius: '4px',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'background-color 0.2s'
-  },
-  secondaryButton: {
-    backgroundColor: '#4b5563',
-    color: 'white',
-    padding: '8px 24px',
-    borderRadius: '4px',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'background-color 0.2s'
-  },
-  
-  // Footer styles
-  footer: {
-    backgroundColor: '#1f2937',
-    color: 'white',
-    padding: '16px',
-    textAlign: 'center',
-    width: '100%'
-  },
-  footerContent: {
-    width: '100%',
-    margin: '0 auto'
-  }
-};
-
-const Navbar = ({ onNavigate, activePage, name }) => {
-  const navItems = ["Home", "About", "Projects", "Hobbies", "Contact"];
-  
-  return (
-    <nav style={styles.navbar}>
-      <div style={styles.navContainer}>
-        <div style={styles.navItems}>
-          {navItems.map((item) => (
-            <button
-              key={item}
-              onClick={() => onNavigate(item)}
-              style={{
-                ...styles.navButton,
-                ...(activePage === item ? styles.navButtonActive : {})
-              }}
-            >
-              {item}
-            </button>
-          ))}
-        </div>
-        <div style={styles.navName}>{name || "Your Name"}</div>
-      </div>
-    </nav>
-  );
-};
-
-const HomePage = ({ name }) => {
-  return (
-    <div style={styles.container}>
-      <div style={styles.contentCentered}>
-        <h1 style={styles.homeTitle}>
-          Welcome to {name}'s Personal Website
-        </h1>
-        <div style={styles.card}>
-          <p style={styles.cardText}>
-            Hello! I'm {name}. This is my personal website where I share my background,
-            projects, hobbies, and ways to get in touch with me.
-          </p>
-          <div style={styles.profilePhoto}>
-            <span>Profile Photo</span>
-          </div>
-          <p style={styles.paragraph}>
-            Feel free to explore the different sections using the navigation bar above.
-            You'll find information about my professional background, projects I've worked on,
-            my personal interests, and ways to contact me.
-          </p>
-          <div style={styles.buttonContainer}>
-            <button style={styles.primaryButton}>View Projects</button>
-            <button style={styles.secondaryButton}>Contact Me</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const AboutPage = () => (
-  <div style={styles.container}>
-    <h1 style={styles.pageTitle}>About Me</h1>
-    <div style={styles.card}>
-      <p style={styles.paragraph}>About page content will go here.</p>
-    </div>
-  </div>
-);
-
-const ProjectsPage = () => (
-  <div style={styles.container}>
-    <h1 style={styles.pageTitle}>My Projects</h1>
-    <div style={styles.card}>
-      <p style={styles.paragraph}>Projects page content will go here.</p>
-    </div>
-  </div>
-);
-
-const HobbiesPage = () => (
-  <div style={styles.container}>
-    <h1 style={styles.pageTitle}>My Hobbies</h1>
-    <div style={styles.card}>
-      <p style={styles.paragraph}>Hobbies page content will go here.</p>
-    </div>
-  </div>
-);
-
-const ContactPage = () => (
-  <div style={styles.container}>
-    <h1 style={styles.pageTitle}>Contact Me</h1>
-    <div style={styles.card}>
-      <p style={styles.paragraph}>Contact page content will go here.</p>
-    </div>
-  </div>
-);
-
+// Main App Component
 export default function PersonalWebsite() {
-  const [activePage, setActivePage] = useState("Home");
-  const [name, setName] = useState("John Doe");
+  const [currentPage, setCurrentPage] = useState('Home');
   
+  // Navigation items
+  const navItems = ['Home', 'About', 'Projects', 'Hobbies', 'Contact'];
+  
+  // Content for each page
   const renderPage = () => {
-    switch(activePage) {
-      case "Home":
-        return <HomePage name={name} />;
-      case "About":
-        return <AboutPage />;
-      case "Projects":
-        return <ProjectsPage />;
-      case "Hobbies":
-        return <HobbiesPage />;
-      case "Contact":
-        return <ContactPage />;
+    switch(currentPage) {
+      case 'Home':
+        return <HomePage />;
+      case 'About':
+        return <PlaceholderPage title="About" />;
+      case 'Projects':
+        return <PlaceholderPage title="Projects" />;
+      case 'Hobbies':
+        return <PlaceholderPage title="Hobbies" />;
+      case 'Contact':
+        return <PlaceholderPage title="Contact" />;
       default:
-        return <HomePage name={name} />;
+        return <HomePage />;
     }
   };
   
   return (
-    <div style={styles.app}>
-      <Navbar 
-        onNavigate={setActivePage} 
-        activePage={activePage} 
-        name={name} 
-      />
-      <main style={styles.main}>
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {/* Navbar */}
+      <nav className="bg-gray-800 text-white shadow-lg">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="text-xl font-bold tracking-tight">Your Name</div>
+          <div className="flex space-x-6">
+            {navItems.map((item) => (
+              <button
+                key={item}
+                onClick={() => setCurrentPage(item)}
+                className={`px-2 py-1 rounded transition-colors duration-200 ${
+                  currentPage === item 
+                    ? 'bg-gray-700 text-white' 
+                    : 'text-gray-300 hover:text-white hover:bg-gray-700'
+                }`}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
+      
+      {/* Page Content */}
+      <div className="flex-grow container mx-auto px-4 py-8">
         {renderPage()}
-      </main>
-      <footer style={styles.footer}>
-        <div style={styles.footerContent}>
-          <p>&copy; {new Date().getFullYear()} {name}. All rights reserved.</p>
+      </div>
+      
+      {/* Footer */}
+      <footer className="bg-gray-800 text-gray-300 py-6">
+        <div className="container mx-auto px-4 text-center">
+          <p>© {new Date().getFullYear()} Your Name. All rights reserved. Or whatever.</p>
+          <p className="text-sm mt-2">Made with equal parts coffee, sarcasm, and React.</p>
         </div>
       </footer>
     </div>
   );
 }
+
+// Home Page Component
+const HomePage = () => {
+  return (
+    <div className="max-w-4xl mx-auto">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Hello, I'm Your Name</h1>
+        <p className="text-xl text-gray-600">
+          Professional by day, actually still professional by night—just with better jokes.
+        </p>
+      </div>
+      
+      <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Welcome to My Little Corner of the Internet</h2>
+        <p className="text-gray-600 mb-4">
+          I'm a [your profession] who believes that excellence and humor aren't mutually exclusive.
+          If you're looking for someone who can deliver top-notch work while maintaining a healthy
+          perspective on life, you've come to the right place.
+        </p>
+        <p className="text-gray-600 mb-4">
+          While others might bore you with corporate jargon and buzzwords, I prefer clear communication
+          with just enough wit to keep things interesting. Think of this site as my digital business card,
+          but one that doesn't take itself too seriously.
+        </p>
+        <div className="mt-6 flex justify-center">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200">
+            Check Out My Work
+          </button>
+          <button className="ml-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-md transition-colors duration-200">
+            Or Don't. I'm Not Your Boss.
+          </button>
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <FeatureCard 
+          title="Skills" 
+          description="I'm pretty good at a lot of things. Exceptional at a few. Terrible at karaoke."
+          icon="⚡"
+        />
+        <FeatureCard 
+          title="Experience" 
+          description="Years of solving problems that shouldn't have existed in the first place."
+          icon="🔧"
+        />
+        <FeatureCard 
+          title="Philosophy" 
+          description="Work smart. Be kind. Don't take yourself too seriously."
+          icon="💭"
+        />
+      </div>
+      
+      <div className="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">Ready to Connect?</h3>
+        <p className="text-gray-600 mb-4">
+          Feel free to explore the site or reach out directly. I typically respond within 24 hours,
+          unless I'm camping or having an existential crisis.
+        </p>
+        <button className="bg-gray-800 hover:bg-black text-white font-medium py-2 px-6 rounded-md transition-colors duration-200">
+          Say Hello
+        </button>
+      </div>
+    </div>
+  );
+};
+
+// Feature Card Component
+const FeatureCard = ({ title, description, icon }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md p-6 text-center">
+      <div className="text-3xl mb-3">{icon}</div>
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
+    </div>
+  );
+};
+
+// Placeholder for other pages
+const PlaceholderPage = ({ title }) => {
+  return (
+    <div className="text-center py-12">
+      <h1 className="text-3xl font-bold text-gray-800 mb-4">{title} Page</h1>
+      <p className="text-xl text-gray-600">
+        This page is coming soon. Or maybe it's not. The suspense is terrible, I hope it lasts.
+      </p>
+    </div>
+  );
+};
