@@ -5,15 +5,15 @@ export default function PersonalWebsite() {
   const [currentPage, setCurrentPage] = useState('Home');
   
   // Navigation items
-  const navItems = ['Home', 'About', 'Projects', 'Hobbies', 'Contact'];
+  const navItems = ['Home', 'Notes', 'Projects', 'Hobbies', 'Contact'];
   
   // Content for each page
   const renderPage = () => {
     switch(currentPage) {
       case 'Home':
         return <HomePage />;
-      case 'About':
-        return <PlaceholderPage title="About" />;
+      case 'Notes':
+        return <PlaceholderPage title="Notes" />;
       case 'Projects':
         return <PlaceholderPage title="Projects" />;
       case 'Hobbies':
