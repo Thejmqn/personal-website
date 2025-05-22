@@ -1,4 +1,26 @@
 import { useState } from 'react';
+import instaLogo from './assets/instagram_logo.png';
+import githubLogo from './assets/github_logo.png';
+import linkedinLogo from './assets/linkedin_logo.png';
+import blueskyLogo from './assets/bluesky_logo.svg'
+
+const SocialIcon = ({ platform, href, ariaLabel, imageSrc }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
+      className="text-gray-300 hover:text-white transition-all duration-200 p-1 rounded hover:bg-gray-700 opacity-75 hover:opacity-100"
+    >
+      <img 
+        src={imageSrc}
+        alt={`${platform} logo`}
+        className="w-6 h-6 filter brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-200"
+      />
+    </a>
+  );
+};
 
 // Main App Component
 export default function PersonalWebsite() {
@@ -46,6 +68,33 @@ export default function PersonalWebsite() {
               </button>
             ))}
           </div>
+          {/* Social Media Links */}
+          <div className="flex items-center space-x-3 ml-6 border-l border-gray-600 pl-6">
+              <SocialIcon 
+                platform="github" 
+                href="https://github.com/Thejmqn" 
+                ariaLabel="GitHub Profile"
+                imageSrc={githubLogo}
+              />
+              <SocialIcon 
+                platform="instagram" 
+                href="https://instagram.com/joemoraninsta" 
+                ariaLabel="Instagram Profile"
+                imageSrc={instaLogo}
+              />
+              <SocialIcon 
+                platform="bluesky" 
+                href="https://bsky.app/profile/joemoran" 
+                ariaLabel="BlueSky Profile"
+                imageSrc={blueskyLogo}
+              />
+              <SocialIcon 
+                platform="linkedin" 
+                href="https://www.linkedin.com/in/joseph-moran-in/" 
+                ariaLabel="LinkedIn Profile"
+                imageSrc={linkedinLogo}
+              />
+            </div>
         </div>
       </nav>
       
