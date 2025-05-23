@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-links a {
+  margin-left: 1.0rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #0077cc;
+}
+
+.home-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.placeholder {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.placeholder h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.placeholder p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; 
+  margin-left: 2rem;
+  padding-left: 1rem;
+  border-left: 1px solid #ccc; 
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a,
+body.dark-mode .navbar-title,
+body.dark-mode .navbar-links a,
+body.dark-mode .home-container,
+body.dark-mode .placeholder {
+  color: #ffffff;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.dark-mode h2,
+body.dark-mode p {
+    color: #d2d2d2
+}
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .navbar-links a {
+  color: #ffffff;
+}
+
+body.dark-mode .navbar-links a:hover {
+  color: #ffcc00;
+}
+
+.navbar {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: inherit;
+}
