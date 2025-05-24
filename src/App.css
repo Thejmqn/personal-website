@@ -89,7 +89,17 @@ body {
   gap: 0.25rem; 
   margin-left: 2rem;
   padding-left: 1rem;
-  border-left: 1px solid #ccc; 
+  border-left: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .navbar-links.open .social-links {
+    border-left: none;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 
 .social-icon {
@@ -153,4 +163,49 @@ body.dark-mode .navbar-links a:hover {
   margin-left: 1rem;
   cursor: pointer;
   color: inherit;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: inherit;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 10;
+    border-bottom: 2px solid #aaa;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a,
+  .dark-mode-toggle {
+    font-size: 1.2rem;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
 }

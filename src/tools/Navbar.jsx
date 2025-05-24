@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import instagramLogo from "./../assets/instagram_logo.png";
 import linkedinLogo from "./../assets/linkedin_logo.png";
@@ -17,16 +18,25 @@ const SocialLink = ({ logo, link, description }) => {
 }
 
 export default function Navbar({ toggleDarkMode, isDarkMode }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-title">Joe Moran Online</div>
-      <div className="navbar-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/hobbies">Hobbies</Link>
-        <Link to="/contact">Contact</Link>
-        <div className="social-links">
+      <button className="hamburger" onClick={toggleMobileMenu}>
+        ☰
+      </button>
+      <div className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
+        <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+        <Link to="/projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+        <Link to="/hobbies" onClick={() => setIsMobileMenuOpen(false)}>Hobbies</Link>
+        <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+        <div className="social-links" onClick={() => setIsMobileMenuOpen(false)}>
           <SocialLink logo={isDarkMode ? darkInstagramLogo : instagramLogo} link="https://instagram.com/joemoraninsta" description="Instagram" />
           <SocialLink logo={isDarkMode ? darkGithubLogo : githubLogo} link="https://github.com/Thejmqn" description="GitHub" />
           <SocialLink logo={isDarkMode ? darkBlueskyLogo : blueskyLogo} link="https://bsky.app/profile/joemoran.bsky.social" description="BlueSky" />
