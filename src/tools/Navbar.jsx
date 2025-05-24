@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 import instagramLogo from "./../assets/instagram_logo.png";
 import linkedinLogo from "./../assets/linkedin_logo.png";
 import githubLogo from "./../assets/github_logo.png";
 import blueskyLogo from "./../assets/bluesky_logo.png";
-import darkGithubLogo from "./../assets/github_logo_dark.png"
-import darkLinkedinLogo from "./../assets/linkedin_logo_dark.png"
-import darkInstagramLogo from "./../assets/instagram_logo_dark.png"
-import darkBlueskyLogo from "./../assets/bluesky_logo_dark.png"
+import darkGithubLogo from "./../assets/github_logo_dark.png";
+import darkLinkedinLogo from "./../assets/linkedin_logo_dark.png";
+import darkInstagramLogo from "./../assets/instagram_logo_dark.png";
+import darkBlueskyLogo from "./../assets/bluesky_logo_dark.png";
 
 const SocialLink = ({ logo, link, description }) => {
   return (
@@ -28,7 +29,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
     <nav className="navbar">
       <div className="navbar-title">Joe Moran Online</div>
       <button className="hamburger" onClick={toggleMobileMenu}>
-        ☰
+        {isMobileMenuOpen ? "🗙" : "☰"}
       </button>
       <div className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
