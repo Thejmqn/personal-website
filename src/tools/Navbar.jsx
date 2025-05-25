@@ -33,7 +33,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
       </button>
       <div className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-        <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+        <Link to="/notes" onClick={() => setIsMobileMenuOpen(false)}>Notes</Link>
         <Link to="/projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
         <Link to="/hobbies" onClick={() => setIsMobileMenuOpen(false)}>Hobbies</Link>
         <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
