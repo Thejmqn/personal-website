@@ -5,7 +5,7 @@ import Navbar from "./tools/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import Placeholder from "./pages/Placeholder.jsx";
 import Notes from "./pages/Notes.jsx";
-import { notes_list } from "./pages/Notes.jsx";
+import notes_list from "./notes/notes_list.jsx";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

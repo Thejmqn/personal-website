@@ -67,3 +67,9 @@ body {
   --text-color: #000;
   --text-color-light: #444;
 }
+
+.note-date {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-color-light);
+}
