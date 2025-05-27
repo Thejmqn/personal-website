@@ -106,3 +106,23 @@ body.dark-mode .back-link,
 body.dark-mode .note-nav-link {
   color: #66aaff;
 }
+
+/* Styling for inline quotes in article content */
+.note-container q {
+  font-style: italic;
+  color: #555;
+  quotes: "“" "”" "‘" "’";
+}
+
+.note-container q::before {
+  content: open-quote;
+}
+
+.note-container q::after {
+  content: close-quote;
+}
+
+/* Dark mode support */
+body.dark-mode .note-container q {
+  color: #ccc;
+}
