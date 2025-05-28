@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import Placeholder from "./pages/Placeholder.jsx";
 import Notes from "./pages/Notes.jsx";
 import notes_list from "./notes/notes_list.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,6 +24,7 @@ export default function App() {
       <div className="app-container">
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <Routes>
+          <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/projects" element={<Placeholder title="My Projects" />} />
