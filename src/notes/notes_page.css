@@ -126,3 +126,38 @@ body.dark-mode .note-nav-link {
 body.dark-mode .note-container q {
   color: #ccc;
 }
+
+.note-container a {
+  color: #0066cc;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.note-container a:hover {
+  color: #004a99;
+  text-decoration-color: #004a99;
+}
+
+.note-container a:visited {
+  color: #5a4aa3;
+}
+
+.note-container a:focus {
+  outline: 2px dashed #0066cc;
+  outline-offset: 2px;
+}
+
+body.dark-mode .note-container a {
+  color: #66aaff;
+}
+
+body.dark-mode .note-container a:hover {
+  color: #99cfff;
+  text-decoration-color: #99cfff;
+}
+
+body.dark-mode .note-container a:visited {
+  color: #c8aaff;
+}
