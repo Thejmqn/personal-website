@@ -1,26 +1,22 @@
 /* Note page container */
 .note-container {
-  max-width: 1200px;
+  max-width: 700px;
   margin: 2rem auto;
   padding: 0 1.5rem;
   line-height: 1.7;
   color: #222;
 }
 
-@media (min-width: 1400px) {
-  .note-container {
-    max-width: 1100px;
-  }
-}
-
 .note-container p {
-  max-width: 70ch;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
 /* Back link */
 .back-link {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   color: #0066cc;
   text-decoration: none;
   font-weight: bold;
@@ -33,7 +29,7 @@
 /* Header image */
 .note-header-image {
   width: 100%;
-  max-height: 320px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -41,21 +37,21 @@
 
 /* Title and date */
 .note-container h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.25rem;
   color: #111;
 }
 
 .note-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #666;
   margin-bottom: 2rem;
 }
 
 /* Section headers */
 .note-container h2 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
   margin-bottom: 0.75rem;
   color: #333;
 }
@@ -64,7 +60,7 @@
 .note-inline-image {
   display: block;
   max-width: 100%;
-  max-height: 320px;
+  max-height: 400px;
   height: auto;
   margin: 1.5rem auto;
   border-radius: 8px;
