@@ -7,6 +7,7 @@ import Placeholder from "./pages/Placeholder.jsx";
 import Notes from "./pages/Notes.jsx";
 import notes_list from "./notes/notes_list.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import Contact from "./pages/Contact.jsx";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,7 +30,7 @@ export default function App() {
           <Route path="/notes" element={<Notes />} />
           <Route path="/projects" element={<Placeholder title="My Projects" />} />
           <Route path="/hobbies" element={<Placeholder title="Hobbies & Interests" />} />
-          <Route path="/contact" element={<Placeholder title="Get in Touch" />} />
+          <Route path="/contact" element={<Contact />} />
           {notes_list.map((note, i) => (<>
               <Route path={"/notes/" + i} element={note.element} />
               <Route path={"/notes/" + note.link} element={note.element} />
