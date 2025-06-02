@@ -1,5 +1,7 @@
-import wanderer from "./1/wanderer.jpg";
-import Note1 from "./1/note1temp";
+import wanderer from "./0/wanderer.jpg";
+import Note0 from "./0/note0";
+import leo from "./1/leo_xiv.png";
+import Note1 from "./1/note1";
 
 const notes_list = [
     {
@@ -8,6 +10,14 @@ const notes_list = [
       image: wanderer,
       link: "intro",
       date: "May 25th, 2025",
+      element: <Note0 />
+    },
+    {
+      title: "Does the Pope have to pay taxes?",
+      preview: "The first American Pope has to deal with some truly American problems. The most notable of them all is that Uncle Sam may be coming for his pocketbook.",
+      image: leo, // https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_4.png
+      link: "pope",
+      date: "June 1st, 2025",
       element: <Note1 />
     }
 ];
