@@ -15,7 +15,7 @@ export default function Notes() {
             <p>{article.preview}</p>
             <div className="note-date">{article.date}</div>
           </Link>
-        ))}
+        )).reverse()}
       </div>
     </div>
   );

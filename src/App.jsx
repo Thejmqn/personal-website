@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound.jsx";
 import Contact from "./pages/Contact.jsx";
 
 export default function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     document.body.className = isDarkMode ? "dark-mode" : "";
