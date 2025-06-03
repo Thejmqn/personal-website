@@ -30,7 +30,7 @@ export default function App() {
           <Route path="/notes" element={<Notes />} />
           <Route path="/projects" element={<Placeholder title="My Projects" />} />
           <Route path="/hobbies" element={<Placeholder title="Hobbies & Interests" />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact darkMode={isDarkMode}/>} />
           {notes_list.map((note, i) => (<>
               <Route path={"/notes/" + i} element={note.element} />
               <Route path={"/notes/" + note.link} element={note.element} />

@@ -8,7 +8,7 @@ import darkLinkedinLogo from "./../assets/linkedin_logo_dark.png";
 import darkInstagramLogo from "./../assets/instagram_logo_dark.png";
 import darkBlueskyLogo from "./../assets/bluesky_logo_dark.png";
 
-export default function Contact() {
+export default function Contact({ darkMode }) {
     const emails = [
         {
         label: "General inquiries",
@@ -44,16 +44,16 @@ export default function Contact() {
 
       <div className="contact-socials">
         <a href="https://github.com/Thejmqn" target="_blank" rel="noopener noreferrer">
-          <img src={githubLogo} alt="GitHub" />
+          <img src={darkMode ? darkGithubLogo : githubLogo} alt="GitHub" />
         </a>
         <a href="https://bsky.app/profile/joemoran.bsky.social" target="_blank" rel="noopener noreferrer">
-          <img src={blueskyLogo} alt="BlueSky" />
+          <img src={darkMode ? darkBlueskyLogo : blueskyLogo} alt="BlueSky" />
         </a>
         <a href="https://instagram.com/joemoraninsta" target="_blank" rel="noopener noreferrer">
-          <img src={instagramLogo} alt="Instagram" />
+          <img src={darkMode ? darkInstagramLogo : instagramLogo} alt="Instagram" />
         </a>
         <a href="https://www.linkedin.com/in/joseph-moran-in/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedinLogo} alt="LinkedIn" />
+          <img src={darkMode ? darkLinkedinLogo : linkedinLogo} alt="LinkedIn" />
         </a>
       </div>
     </div>
