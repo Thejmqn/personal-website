@@ -1,7 +1,9 @@
 import wanderer from "./0/wanderer.jpg";
 import Note0 from "./0/note0";
 import leo from "./1/leo_xiv.png";
+import game from "./2/long_game.png";
 import Note1 from "./1/note1";
+import Note2 from "./2/Note2";
 
 const notes_list = [
     {
@@ -19,6 +21,14 @@ const notes_list = [
       link: "pope",
       date: "June 1st, 2025",
       element: <Note1 />
+    },
+    {
+      title: "What's the most boring baseball game of all time?",
+      preview: "Last week I was at a really boring baseball game. But was it the most boring MLB game ever?",
+      image: game,
+      link: "baseball",
+      date: "June 15th, 2025",
+      element: <Note2 />
     }
 ];
 
