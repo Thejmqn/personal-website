@@ -2,8 +2,10 @@ import wanderer from "./0/wanderer.jpg";
 import Note0 from "./0/note0";
 import leo from "./1/leo_xiv.png";
 import game from "./2/long_game.png";
+import statue from "./3/statue.png"
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
+import Note3 from "./3/note3";
 
 const notes_list = [
     {
@@ -29,6 +31,14 @@ const notes_list = [
       link: "baseball",
       date: "June 15th, 2025",
       element: <Note2 />
+    },
+    {
+      title: "The Jim Ryan situation is crazy...",
+      preview: "President Ryan of UVA has been ousted. There is one question to ask: WWJD? (What Would Jefferson Do?)",
+      image: statue,
+      link: "jim",
+      date: "June 29th, 2025",
+      element: <Note3 />
     }
 ];
 
