@@ -5,7 +5,7 @@ import './../notes_page.css';
 import bennett from './bennett.jpg';
 import carrshill from './carrshill.jpg';
 import jim from './jim.jpg';
-import statue from './statue.png';
+import statue from './statue.jpg';
 export default function Note3() {
     const noteIndex = 3;
     const note = notes_list[noteIndex];

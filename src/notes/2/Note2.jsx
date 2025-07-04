@@ -5,7 +5,7 @@ import './../notes_page.css';
 import code from './code.png';
 import game from './game.jpg';
 import least_boring from './least_boring.png';
-import long_game from './long_game.png';
+import long_game from './long_game.jpg';
 export default function Note2() {
     const noteIndex = 2;
     const note = notes_list[noteIndex];
