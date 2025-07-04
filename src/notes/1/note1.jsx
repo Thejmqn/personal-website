@@ -11,8 +11,8 @@ export default function Note1() {
 
   if (!note) return <div className="note-container">Note not found.</div>;
   
-  const prevNote = notes_list[noteIndex + 1];
-  const nextNote = notes_list[noteIndex - 1];
+  const prevNote = notes_list[noteIndex - 1];
+  const nextNote = notes_list[noteIndex + 1];
 
   return (
     <div className="note-container">
@@ -60,8 +60,8 @@ export default function Note1() {
         </figcaption>
       </figure>
       <div className="note-nav">
-        {prevNote && <Link to={prevNote.link} className="note-nav-link">← {prevNote.title}</Link>}
-        {nextNote && <Link to={nextNote.link} className="note-nav-link">{nextNote.title} →</Link>}
+        {prevNote && <Link to={`${window.location.pathname}/../${prevNote.link}`} className="note-nav-link">← {prevNote.title}</Link>}
+        {nextNote && <Link to={`${window.location.pathname}/../${nextNote.link}`} className="note-nav-link">{nextNote.title} →</Link>}
       </div>
     </div>
   );

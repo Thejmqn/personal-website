@@ -9,6 +9,7 @@ import darkGithubLogo from "./../assets/github_logo_dark.png";
 import darkLinkedinLogo from "./../assets/linkedin_logo_dark.png";
 import darkInstagramLogo from "./../assets/instagram_logo_dark.png";
 import darkBlueskyLogo from "./../assets/bluesky_logo_dark.png";
+import { HamburgerIcon, CloseIcon } from "./Icons";
 
 const SocialLink = ({ logo, link, description }) => {
   return (
@@ -16,6 +17,16 @@ const SocialLink = ({ logo, link, description }) => {
       <img src={logo} alt={description} className="social-icon" />
     </a>
     );
+}
+
+function Hamburger() {
+  return (
+    <svg width="30" height="30" viewBox="0 0 100 80">
+      <rect width="100" height="15"></rect>
+      <rect y="30" width="100" height="15"></rect>
+      <rect y="60" width="100" height="15"></rect>
+    </svg>
+  )
 }
 
 export default function Navbar({ toggleDarkMode, isDarkMode }) {
@@ -27,9 +38,11 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
 
   return (
     <nav className="navbar">
-      <div className="navbar-title">Joe Moran Online</div>
+      <div className="navbar-title">
+        <Link to ="/">Joe Moran Online</Link>
+      </div>
       <button className="hamburger" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? "🗙" : "☰"}
+        {isMobileMenuOpen ? <CloseIcon darkMode={isDarkMode}/> : <HamburgerIcon darkMode={isDarkMode}/>}
       </button>
       <div className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
