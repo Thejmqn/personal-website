@@ -110,52 +110,85 @@ body.dark-mode .home-figure figcaption {
 body.dark-mode .home-profile-image {
   border: 3px solid #ccc; 
 }
+
 .home-buttons {
   margin-top: 3rem;
   text-align: center;
-}
-
-.home-buttons p {
-  margin: 1.5rem 0 0.75rem;
-  font-size: 1.05rem;
-  color: #333;
 }
 
 .button-group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .home-button {
-  display: inline-block;
-  background-color: #0056cc;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s ease;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .home-button:hover {
-  background-color: #0040a0;
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
 
-body.dark-mode .home-buttons p {
-  color: #ccc;
+/* Individual colors - Light mode */
+.notes-button {
+  background-color: #0056cc;
+}
+
+.latest-note-button {
+  background-color: #00a86b;
+}
+
+.projects-button {
+  background-color: #ff8800;
+}
+
+.hobbies-button {
+  background-color: #cc00cc;
+}
+
+.contact-button {
+  background-color: #e60023;
+}
+
+/* Dark mode colors */
+body.dark-mode .notes-button {
+  background-color: #66aaff;
+}
+
+body.dark-mode .latest-note-button {
+  background-color: #33d17a;
+}
+
+body.dark-mode .projects-button {
+  background-color: #ffaa33;
+}
+
+body.dark-mode .hobbies-button {
+  background-color: #e066e0;
+}
+
+body.dark-mode .contact-button {
+  background-color: #ff4b5c;
 }
 
 body.dark-mode .home-button {
-  background-color: #66aaff;
-  color: #111;
-}
-
-body.dark-mode .home-button:hover {
-  background-color: #3399ff;
+  color: #111; 
 }
 
 .home-intro {

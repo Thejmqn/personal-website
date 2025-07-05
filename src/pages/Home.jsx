@@ -25,20 +25,13 @@ export default function Home() {
       </div>
     </div>
     <div className="home-buttons">
-      <p>Please see some of the following links for recent articles / notes: </p>
       <div className="button-group">
-        <Link to="/notes" className="home-button">Read My Notes</Link>
-        <Link to="/notes/intro" className="home-button">Latest Note</Link>
+        <Link to="/notes" className="home-button notes-button" aria-label="Read My Notes">All Notes</Link>
+        <Link to="/notes/intro" className="home-button latest-note-button" aria-label="Latest Note">Latest Note</Link>
+        <Link to="/projects" className="home-button projects-button" aria-label="See My Projects">Professional</Link>
+        <Link to="/hobbies" className="home-button hobbies-button" aria-label="Check Out My Hobbies">Hobbies</Link>
+        <Link to="/contact" className="home-button contact-button" aria-label="Contact Me">Contact</Link>
       </div>
-
-      <p>Or the following for other projects, professional and for fun: </p>
-      <div className="button-group">
-        <Link to="/projects" className="home-button">See My Projects</Link>
-        <Link to="/hobbies" className="home-button">Check Out My Hobbies</Link>
-      </div>
-
-      <p>Contact information:</p>
-      <Link to="/contact" className="home-button">Contact Me</Link>
     </div>
   </div>
   );
