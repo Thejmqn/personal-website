@@ -27,8 +27,8 @@ export default function Home() {
     <div className="home-buttons">
       <div className="button-group">
         <Link to="/notes" className="home-button notes-button" aria-label="Read My Notes">All Notes</Link>
-        <Link to="/notes/intro" className="home-button latest-note-button" aria-label="Latest Note">Latest Note</Link>
-        <Link to="/projects" className="home-button projects-button" aria-label="See My Projects">Professional</Link>
+        <Link to="/notes/latest" className="home-button latest-note-button" aria-label="Latest Note">Latest Note</Link>
+        <Link to="/work" className="home-button projects-button" aria-label="See My Projects">Professional</Link>
         <Link to="/hobbies" className="home-button hobbies-button" aria-label="Check Out My Hobbies">Hobbies</Link>
         <Link to="/contact" className="home-button contact-button" aria-label="Contact Me">Contact</Link>
       </div>

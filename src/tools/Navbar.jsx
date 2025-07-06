@@ -19,16 +19,6 @@ const SocialLink = ({ logo, link, description }) => {
     );
 }
 
-function Hamburger() {
-  return (
-    <svg width="30" height="30" viewBox="0 0 100 80">
-      <rect width="100" height="15"></rect>
-      <rect y="30" width="100" height="15"></rect>
-      <rect y="60" width="100" height="15"></rect>
-    </svg>
-  )
-}
-
 export default function Navbar({ toggleDarkMode, isDarkMode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -48,7 +38,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
         <Link to="/notes" onClick={() => setIsMobileMenuOpen(false)}>Notes</Link>
         <Link to="/work" onClick={() => setIsMobileMenuOpen(false)}>Past Work</Link>
-        <Link to="/other" onClick={() => setIsMobileMenuOpen(false)}>Hobbies</Link>
+        <Link to="/misc" onClick={() => setIsMobileMenuOpen(false)}>Hobbies</Link>
         <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
         <div className="social-links" onClick={() => setIsMobileMenuOpen(false)}>
           <SocialLink logo={isDarkMode ? darkInstagramLogo : instagramLogo} link="https://instagram.com/joemoraninsta" description="Instagram" />

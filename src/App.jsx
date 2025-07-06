@@ -8,6 +8,8 @@ import Notes from "./pages/Notes.jsx";
 import notes_list from "./notes/notes_list.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Contact from "./pages/Contact.jsx";
+import Work from "./pages/Work.jsx";
+import Misc from "./pages/Misc.jsx";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -28,13 +30,14 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/notes" element={<Notes />} />
-          <Route path="/work" element={<Placeholder title="My Projects" />} />
-          <Route path="/other" element={<Placeholder title="Hobbies & Interests" />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/misc" element={<Misc />} />
           <Route path="/contact" element={<Contact darkMode={isDarkMode}/>} />
           {notes_list.map((note, i) => (<>
               <Route path={"/notes/" + i} element={note.element} />
               <Route path={"/notes/" + note.link} element={note.element} />
           </>))}
+          <Route path="/notes/latest" element={notes_list[notes_list.length-1].element} />
         </Routes>
       </div>
     </Router>
