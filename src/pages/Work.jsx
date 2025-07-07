@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom";
-import "./Notes.css";
+import "./Work.css";
 import work_list from "../work/work_list";
 
 export default function Work() {
   return (
-    <div className="notes-container">
-      <h1>Past Work (Projects)</h1>
-      <p>These are some professional projects I have done at various times, such as at work, school, or for fun at home.</p>
-      <div className="notes-grid">
-        {work_list.map((article, index) => (
-          <Link to={article.link} key={index} className="note-preview">
-            <img src={article.image} alt={article.title} className="note-image" />
-            <h3>{article.title}</h3>
-            <p>{article.preview}</p>
-            <div className="note-date">{article.date}</div>
+    <div className="work-container">
+      <h1>Projects</h1>
+      <p>Here's a quick look at some things I've built and tinkered with. Click to learn more about each one!</p>
+      <div className="work-grid">
+        {work_list.map((project, index) => (
+          <Link to={project.link} key={index} className="work-preview">
+            <img src={project.image} alt={project.title} className="work-image" />
+            <h3>{project.title}</h3>
+            <p>{project.summary}</p>
           </Link>
-        )).reverse()}
+        ))}
       </div>
     </div>
   );
