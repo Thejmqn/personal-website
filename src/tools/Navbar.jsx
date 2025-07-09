@@ -38,7 +38,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
         <Link to="/notes" onClick={() => setIsMobileMenuOpen(false)}>Notes</Link>
         <Link to="/work" onClick={() => setIsMobileMenuOpen(false)}>Past Work</Link>
-        <Link to="/misc" onClick={() => setIsMobileMenuOpen(false)}>Hobbies</Link>
+        <Link to="/misc" onClick={() => setIsMobileMenuOpen(false)}>Misc</Link>
         <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
         <div className="social-links" onClick={() => setIsMobileMenuOpen(false)}>
           <SocialLink logo={isDarkMode ? darkInstagramLogo : instagramLogo} link="https://instagram.com/joemoraninsta" description="Instagram" />

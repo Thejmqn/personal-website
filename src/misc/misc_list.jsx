@@ -1,15 +1,37 @@
-import wanderer from "./../notes/0/wanderer.jpg";
-import Note0 from "./../notes/0/note0";
+import bagel from "./../work/codes/bagel.jpg";
+import ghost from "./../work//ghosts/ghosts.jpg";
+import stormwater from "./../work//ohill/stormwater.jpg";
+import phishing from "./../work//domains/phishing.jpg";
 
 const misc_list = [
+  {
+    id: "uva-codes",
+    title: "UVA Codes",
+    summary: "Created by request for a friend, a full-stack webapp to track order codes.",
+    image: bagel,
+    link: "codes"
+  },
+  {
+    id: "ghosts-on-grounds",
+    title: "Ghosts on Grounds",
+    summary: "A website for a ghost tour at the University.",
+    image: ghost,
+    link: "ghosts"
+  },
+  {
+    id: "civil-field",
+    title: "Civil Redesign",
+    summary: "Stormwater management and grading for a new project on a field.",
+    image: stormwater,
+    link: "ohill"
+  },
     {
-      title: "Trumpet",
-      preview: "I have played trumpet for about 8 years now.",
-      image: wanderer,
-      link: "intro",
-      date: "May 25th, 2025",
-      element: <Note0 />
-    },
+    id: "domains",
+    title: "Domain Trickery",
+    summary: "Experimenting with web domains and the dangers of certain TLDs.",
+    image: phishing,
+    link: "domains"
+  }
 ];
 
 export default misc_list;
