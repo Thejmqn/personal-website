@@ -11,6 +11,7 @@ import Work from "./pages/Work.jsx";
 import Misc from "./pages/Misc.jsx";
 import work_list from "./work/work_list.jsx";
 import misc_list from "./misc/misc_list.jsx";
+import Footer from "./tools/Footer.jsx";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -27,6 +28,7 @@ export default function App() {
     <Router>
       <div className="app-container">
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        <main>
         <Routes>
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
@@ -46,6 +48,8 @@ export default function App() {
               <Route path={"/misc/" + misc.link} element={misc.element} />
           )}
         </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );
