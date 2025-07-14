@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
 import photo from "./../assets/file.jpg";
+import cat from "./../assets/cat.jpg";
 
 export default function Home() {
   return (
   <div className="home-container">
     <div className="home-intro">
-      <figure className="home-figure">
-        <img src={photo} alt="Photo of me" className="home-profile-image" />
-        <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
-      </figure>
+      <div className="figure-container">
+        <figure className="home-figure">
+          <img src={photo} alt="Photo of me" className="home-profile-image" />
+          <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
+        </figure>
+        <figure className="home-figure">
+          <img src={cat} alt="Photo of me" className="home-profile-image" />
+          <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
+        </figure>
+      </div>
       <div className="home-text">
         <h1>Welcome to Joe Moran Online</h1>
         <h2>Notice: This page is currently under construction.</h2>
@@ -22,15 +29,15 @@ export default function Home() {
             past projects. I think most social media platforms are a bit too restrictive in terms of the customization they allow,
             so I just decided to quickly put together my own page instead. I'll still be posting links to this page on some social media though.
         </p>
-      </div>
-    </div>
-    <div className="home-buttons">
-      <div className="button-group">
-        <Link to="/notes" className="home-button notes-button" aria-label="Read My Notes">All Notes</Link>
-        <Link to="/notes/latest" className="home-button latest-note-button" aria-label="Latest Note">Latest Note</Link>
-        <Link to="/work" className="home-button projects-button" aria-label="See My Projects">Professional</Link>
-        <Link to="/hobbies" className="home-button hobbies-button" aria-label="Check Out My Hobbies">Hobbies</Link>
-        <Link to="/contact" className="home-button contact-button" aria-label="Contact Me">Contact</Link>
+        <div className="home-buttons">
+          <div className="button-group">
+            <Link to="/notes" className="home-button notes-button" aria-label="Read My Notes">All Notes</Link>
+            <Link to="/notes/latest" className="home-button latest-note-button" aria-label="Latest Note">Latest Note</Link>
+            <Link to="/work" className="home-button projects-button" aria-label="See My Projects">Professional</Link>
+            <Link to="/hobbies" className="home-button hobbies-button" aria-label="Check Out My Hobbies">Hobbies</Link>
+            <Link to="/contact" className="home-button contact-button" aria-label="Contact Me">Contact</Link>
+          </div>
+        </div>
       </div>
     </div>
   </div>

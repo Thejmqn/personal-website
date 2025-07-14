@@ -1,9 +1,19 @@
 import bagel from "./../work/codes/bagel.jpg";
-import ghost from "./../work//ghosts/ghosts.jpg";
-import stormwater from "./../work//ohill/stormwater.jpg";
-import phishing from "./../work//domains/phishing.jpg";
+import ghost from "./../work/ghosts/ghosts.jpg";
+import stormwater from "./../work/ohill/stormwater.jpg";
+import phishing from "./../work/domains/phishing.jpg";
+import hammer from "./quotes/hammer.svg";
+import Quotes from "./quotes/Quotes.jsx";
 
 const misc_list = [
+  {
+    id: "quotes",
+    title: "Quotes",
+    summary: "I just have a bunch of stupid quotes I say.",
+    image: hammer,
+    link: "quotes",
+    element: <Quotes />
+  },
   {
     id: "uva-codes",
     title: "UVA Codes",
