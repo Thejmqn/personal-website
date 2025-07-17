@@ -3,9 +3,11 @@ import Note0 from "./0/note0";
 import leo from "./1/leo_xiv.jpg";
 import game from "./2/long_game.jpg";
 import statue from "./3/statue.jpg"
+import anthem from "./4/game.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
+import Note4 from "./4/note4";
 
 const notes_list = [
     {
@@ -39,6 +41,14 @@ const notes_list = [
       link: "jim",
       date: "June 29th, 2025",
       element: <Note3 />
+    },
+    {
+      title: "The Star-Spangled Banner is Boring",
+      preview: "Is the Star-Spangled Banner really the best anthem to represent America? I explore the topic and examine other options.",
+      image: anthem,
+      link: "anthem",
+      date: "July 13th, 2025",
+      element: <Note4 />
     }
 ];
 

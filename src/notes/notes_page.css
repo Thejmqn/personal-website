@@ -199,3 +199,33 @@ body.dark-mode .note-figure figcaption {
 body.dark-mode .note-figure .image-source a {
   color: #66aaff;
 }
+
+.note-list {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+  counter-reset: item;
+}
+
+.list-element {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.list-element::marker {
+  color: #333;
+}
+
+body.dark-mode .list-element::marker {
+  color: #ccc;
+}
+
+.note-container h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+body.dark-mode .note-container h3 {
+  color: #ddd;
+}
