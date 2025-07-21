@@ -6,23 +6,17 @@ export default function Home() {
   return (
   <div className="home-container">
     <div className="home-intro">
-      <div className="figure-container">
-        <figure className="home-figure">
-          <img src={photo} alt="Photo of me" className="home-profile-image" />
-          <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
-        </figure>
-        <figure className="home-figure">
-          <img src={cat} alt="Photo of me" className="home-profile-image" />
-          <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
-        </figure>
-      </div>
+      <figure className="home-figure">
+        <img src={photo} alt="Photo of me" className="home-profile-image" />
+        <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
+      </figure>
       <div className="home-text">
         <h1>Welcome to Joe Moran Online</h1>
         <h2>Notice: This page is currently under construction.</h2>
         <p>
-            If you are reading this page, you probably already have a decent idea of who I am. Although if you don't,
-            that is pretty cool. I am a Computer Science (yikes) major at the University of Virginia, Charolettsville. 
-            I have some slightly unique hobbies, interests, and beliefs, so I will just be throwing whatever I think of onto here if you are interested.
+            Welcome to the Joe Moran homepage. My name is Joe Moran (shocker), and I am a Computer Science major at the University of Virginia in Charlottesville.
+            I have worked as a software developer for the past three years at various government contractors. This page exists for both
+            professional and personal purposes, which you can find more about by exploring around.
         </p>
         <p>
             I am making this page to create a more free form website where I can express my thoughts and also show off some
@@ -34,7 +28,7 @@ export default function Home() {
             <Link to="/notes" className="home-button notes-button" aria-label="Read My Notes">All Notes</Link>
             <Link to="/notes/latest" className="home-button latest-note-button" aria-label="Latest Note">Latest Note</Link>
             <Link to="/work" className="home-button projects-button" aria-label="See My Projects">Professional</Link>
-            <Link to="/hobbies" className="home-button hobbies-button" aria-label="Check Out My Hobbies">Hobbies</Link>
+            <Link to="/misc" className="home-button hobbies-button" aria-label="Miscellaneous Topics">Misc</Link>
             <Link to="/contact" className="home-button contact-button" aria-label="Contact Me">Contact</Link>
           </div>
         </div>

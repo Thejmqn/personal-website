@@ -44,7 +44,7 @@ const notes_list = [
     },
     {
       title: "The Star-Spangled Banner is Boring",
-      preview: "Is the Star-Spangled Banner really the best anthem to represent America? I explore the topic and examine other options.",
+      preview: "Is the Star-Spangled Banner really the best America can do? Exploring the topic and some possible alternatives.",
       image: anthem,
       link: "anthem",
       date: "July 13th, 2025",

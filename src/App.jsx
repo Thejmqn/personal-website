@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound.jsx";
 import Contact from "./pages/Contact.jsx";
 import Work from "./pages/Work.jsx";
 import Misc from "./pages/Misc.jsx";
+import Placeholder from "./pages/Placeholder.jsx";
 import work_list from "./work/work_list.jsx";
 import misc_list from "./misc/misc_list.jsx";
 import Footer from "./tools/Footer.jsx";
@@ -34,7 +35,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/misc" element={<Misc />} />
+          <Route path="/misc" element={<Placeholder title="Misc" />} />
           <Route path="/contact" element={<Contact darkMode={isDarkMode}/>} />
           {notes_list.map((note, i) => (<>
               <Route path={"/notes/" + i} element={note.element} />
