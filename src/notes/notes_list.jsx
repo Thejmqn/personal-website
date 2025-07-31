@@ -4,10 +4,12 @@ import leo from "./1/leo_xiv.jpg";
 import game from "./2/long_game.jpg";
 import statue from "./3/statue.jpg"
 import anthem from "./4/game.jpg";
+import cover from "./5/cover.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
 import Note4 from "./4/note4";
+import Note5 from "./5/note5";
 
 const notes_list = [
     {
@@ -49,6 +51,14 @@ const notes_list = [
       link: "anthem",
       date: "July 13th, 2025",
       element: <Note4 />
+    },
+    {
+      title: "Two Covers and an Album",
+      preview: "Comparing and contrasting three performances I have seen over the past months in genres about as far apart as possible.",
+      image: cover,
+      link: "concert",
+      date: "July 27th, 2025",
+      element: <Note5 />
     }
 ];
 
