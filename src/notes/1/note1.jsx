@@ -30,7 +30,7 @@ export default function Note1() {
         <img src={white_sox} alt="White Sox Pope" className="note-inline-image" />
         <figcaption>
           Pope Leo could probably make the 2025 White Sox team.
-          <span className="image-source">Source: <a href="https://www.mlb.com/whitesox/video/white-sox-pregame-recognizes-pope-leo-xiv" target="_blank" rel="noopener noreferrer">MLB</a></span>
+          <span className="image-source"> <a href="https://www.mlb.com/whitesox/video/white-sox-pregame-recognizes-pope-leo-xiv" target="_blank" rel="noopener noreferrer">Source</a></span>
         </figcaption>
       </figure>
       <h2>A Papal Payment</h2>
@@ -43,7 +43,7 @@ export default function Note1() {
         <figcaption>
           Countries in purple have taxation by citizenship. The other countries don't. Honestly I can't be bothered to look what the other colors mean.
           <br />
-          <span className="image-source">Source: <a href="https://commons.wikimedia.org/wiki/File:Individual_Taxation_Systems.svg" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          <span className="image-source"> <a href="https://commons.wikimedia.org/wiki/File:Individual_Taxation_Systems.svg" target="_blank" rel="noopener noreferrer">Source</a></span>
         </figcaption>
       </figure>
       <h2>Pontiff for President</h2>
@@ -56,7 +56,7 @@ export default function Note1() {
         <figcaption>
           Robert John Cornell was one of two Catholic priests to concurrently serve in Congress.
           <br />
-          <span className="image-source">Source: <a href="https://en.wikipedia.org/wiki/Robert_John_Cornell" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          <span className="image-source"> <a href="https://en.wikipedia.org/wiki/Robert_John_Cornell" target="_blank" rel="noopener noreferrer">Source</a></span>
         </figcaption>
       </figure>
       <div className="note-nav">

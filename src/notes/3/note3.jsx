@@ -27,7 +27,7 @@ export default function Note3() {
         <figure className="note-figure">
             <img src={jim} alt="Jim Ryan sits alone on the steps." className="note-inline-image" />
             <figcaption>Jim Ryan sits alone on the steps.</figcaption>
-            <span className="image-source">Source: <a href='https://president.virginia.edu/sites/president\_d9/files/styles/large/public/25VAEDU-Presidents-Ryan-Portraits.jpg?itok=nNPqh5je/' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://president.virginia.edu/sites/president\_d9/files/styles/large/public/25VAEDU-Presidents-Ryan-Portraits.jpg?itok=nNPqh5je/' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>A President for All</h2>
         <p>An interesting, although not super relevant, technicality to start off with is the University was never intended to have a president in the first place. Jefferson originally structured the University to be governed exclusively by the Board of Visitors. For the first 80 years of UVA, there was no position of president at all. Instead, various high-ranking faculty members would be sworn in as University Executives and oversee different departments and tasks. Jefferson historically was opposed to having a single, powerful <q>strongman</q> leader that could resemble a king. For example, he <a href="https://time.com/4166680/thomas-jefferson-state-of-the-union/" target="_blank" rel="noopener noreferrer">refused to speak in front of Congress</a>, arguing it would look too much like a king. The no-president system ended in 1904 when <a href="https://encyclopediavirginia.org/entries/alderman-edwin-anderson-1861-1931/" target="_blank" rel="noopener noreferrer">Edwin Alderman</a>, of Alderman Road fame, was sworn in as the first President of the University of Virginia. The previous system with multiple administrative leaders was deemed too cumbersome, so Jefferson’s original vision for a University without a President was discarded.</p>
@@ -37,7 +37,7 @@ export default function Note3() {
         <figure className="note-figure">
             <img src={carrshill} alt="Carr’s Hill sits empty without a President." className="note-inline-image" />
             <figcaption>Carr’s Hill sits empty without a President.</figcaption>
-            <span className="image-source">Source: <a href='https://carrshill.virginia.edu/' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://carrshill.virginia.edu/' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>The Virginia Resolution</h2>
         <p>If the removal of President Ryan by federal forces cannot be justified by the structure of the University, what other common arguments are there? The most common contention is based on the University’s acceptance of federal grants. Ryan opponents argue that the federal government is justified in pressuring for his removal, since the University is a large recipient of federal research grants. They say that UVA, if it did not want to listen to the federal government, should simply not accept any funds. This seems to be a reasonable argument on a surface level; however, after deeper thinking the flaws in this idea should come up quickly. I find this argument to be particularly short-sightened and poorly thought out compared to other arguments made, and Jefferson would have as well.</p>
@@ -47,7 +47,7 @@ export default function Note3() {
         <figure className="note-figure">
             <img src={statue} alt="Trump takes the place of Jefferson." className="note-inline-image" />
             <figcaption>Trump takes the place of Jefferson.</figcaption>
-            <span className="image-source">Source: <a href='[https://www.pexels.com/photo/rotunda-uva-university-of-virginia-1254372](https://www.pexels.com/photo/rotunda-uva-university-of-virginia-1254372/' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='[https://www.pexels.com/photo/rotunda-uva-university-of-virginia-1254372](https://www.pexels.com/photo/rotunda-uva-university-of-virginia-1254372/' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>President Bennett </h2>
         <p>Now that Ryan is removed from office, one question remains: what, and who, is next? Per University policy, Executive Vice President Jennefier Davis will become acting president. She will maintain this role until an interim president is named, who will then hold the role until a permanent president is named. I find this system a bit silly given that there is currently an interim interim president in charge, but that is beside the point. The Board of Visitors will need to search for the next leader of the University. There are very few candidates that will make everyone happy, given the political differences between the Board, the federal government, the Virginia government, and the student body.</p>
@@ -57,7 +57,7 @@ export default function Note3() {
         <figure className="note-figure">
             <img src={bennett} alt="Look at how formal Coach Bennett is. He is ready to be President." className="note-inline-image" />
             <figcaption>Look at how formal Coach Bennett is. He is ready to be President.</figcaption>
-            <span className="image-source">Source: <a href='https://upload.wikimedia.org/wikipedia/commons/b/ba/Bennett\_copy.jpg' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://upload.wikimedia.org/wikipedia/commons/b/ba/Bennett\_copy.jpg' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
 
         <div className="note-nav">

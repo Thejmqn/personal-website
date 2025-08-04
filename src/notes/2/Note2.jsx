@@ -25,7 +25,7 @@ export default function Note2() {
         <figure className="note-figure">
             <img src={game} alt="A picture of the pretty boring Nationals game I was at." className="note-inline-image" />
             <figcaption>A picture of the pretty boring Nationals game I was at.</figcaption>
-            <span className="image-source">Source: <a href='https://en.wikipedia.org/wiki/Nationals_Park' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://en.wikipedia.org/wiki/Nationals_Park' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>Avoiding the Extremes</h2>
         <p>A quick Google search for <q>most boring baseball game</q> yields surprisingly few results, as seemingly no one has tried to answer this question before. Trust me, I scoured the Internet far and wide - I even went to the second page of Google. The only game that seems to be discussed sometimes is a <a href="https://en.wikipedia.org/wiki/Extra_innings#Longest_games" target="_blank" rel="noopener noreferrer">1968 game</a> between the Mets and Astros that went scoreless through 24 innings. Here’s the thing though: In my opinion, a 24 inning scoreless tie is actually a pretty interesting and exciting game. While it is not the most exciting, at least the game is close and everyone watching knows that a single play could end the game at any point. To me, that sounds more like a nail biter than a snoozefest.</p>
@@ -35,7 +35,7 @@ export default function Note2() {
         <figure className="note-figure">
             <img src={long_game} alt="Alright, a thirty-three inning long game might get a bit old after awhile" className="note-inline-image" />
             <figcaption>Alright, a thirty-three inning long game might get a bit old after awhile</figcaption>
-            <span className="image-source">Source: <a href='https://upload.wikimedia.org/wikipedia/commons/6/60/Longest_game_in_professional_baseball_history_-_line_score.png' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://upload.wikimedia.org/wikipedia/commons/6/60/Longest_game_in_professional_baseball_history_-_line_score.png' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>Creating a Formula</h2>
         <p>To find out the most boring game, we first need a rough formula to assign a <q>boring score</q> to each MLB game that has happened. To make this formula, I took into account various statistics for each MLB game, and assigned them a multiplier based on whether they make the game more exciting or less. For example, for each mound visit in a game, the boring score increases by 0.3. On the other hand, each lead change decreases the boring score by -3. There were about 25 stats included in this measurement ranging from small annoyances like the number of video reviews used, to major slowdowns like the number of pitching changes.</p>
@@ -44,7 +44,7 @@ export default function Note2() {
         <figure className="note-figure">
             <img src={code} alt="Part of the Python code to calculate the boring score" className="note-inline-image" />
             <figcaption>Part of the Python code to calculate the boring score</figcaption>
-            <span className="image-source">Source: <a href='https://github.com/Thejmqn/boring-baseball/blob/main/main.py' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://github.com/Thejmqn/boring-baseball/blob/main/main.py' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>Game of the Year</h2>
         <p>After running through all the games of the 2024 season, the three highest scoring games were <a href="https://www.baseball-reference.com/boxes/ANA/ANA202409180.shtml" target="_blank" rel="noopener noreferrer">White Sox at Angels</a> with a boring score of 47, <a href="https://www.baseball-reference.com/boxes/TBA/TBA202408300.shtml" target="_blank" rel="noopener noreferrer">Padres at Rays</a> with a score of 45, and <a href="https://www.baseball-reference.com/boxes/OAK/OAK202407040.shtml" target="_blank" rel="noopener noreferrer">Angels at Athletics</a> with a score of 44. To be honest I am a bit surprised that the White Sox at Angels game scored so highly given that it went to extra innings and the game was relatively close. However, the first nine innings only had two runs scored, and the game incurred a massive penalty due to being between two very bad teams at the end of the season. There were also a horrific 15 pitchers used and 11 mound visits, causing the game to last over three and a half hours. The Padres at Rays game also took three and a half hours and was a blowout.</p>
@@ -54,7 +54,7 @@ export default function Note2() {
         <figure className="note-figure">
             <img src={least_boring} alt="Spreadsheet analyzing the last boring games of the 2024 season" className="note-inline-image" />
             <figcaption>Spreadsheet analyzing the last boring games of the 2024 season</figcaption>
-            <span className="image-source">Source: <a href='https://github.com/Thejmqn/boring-baseball/blob/main/boring-stats.xlsx' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://github.com/Thejmqn/boring-baseball/blob/main/boring-stats.xlsx' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
 
         <div className="note-nav">

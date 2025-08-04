@@ -27,7 +27,7 @@ export default function Note5() {
         <figure className="note-figure">
             <img src={bell} alt="The bell curve of the enjoyment of a song over time." className="note-inline-image" />
             <figcaption>The bell curve of the enjoyment of a song over time.</figcaption>
-            <span className="image-source">Source: <a href='https://en.wikipedia.org/wiki/Normal\_distribution' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href={bell} target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>Dreams and Rumo(u)rs</h2>
         <p>While I was aware of Fleetwood Mac before this concert, I was never the biggest fan of them and probably could not name more than five of their songs before this. I knew they made a bunch of famous songs, but I just considered them to be another generic 70s rock band without too much interesting else about them. The concert I went to completely changed my perspective of that idea. The cover band performed the entirety of their 1977 album <a href="https://en.wikipedia.org/wiki/Rumours_\(album\" target="_blank" rel="noopener noreferrer">Rumours</a>), periodically interjecting with facts about the band and the troubled recording history of the album.</p>
@@ -36,7 +36,7 @@ export default function Note5() {
         <figure className="note-figure">
             <img src={mac} alt="A boring picture of Fleetwood Mac since I forgot to take pictures." className="note-inline-image" />
             <figcaption>A boring picture of Fleetwood Mac since I forgot to take pictures.</figcaption>
-            <span className="image-source">Source: <a href='https://upload.wikimedia.org/wikipedia/commons/f/fe/Fleetwood\_Mac\_Billboard\_1977.jpg' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://upload.wikimedia.org/wikipedia/commons/f/fe/Fleetwood\_Mac\_Billboard\_1977.jpg' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>Revenge of the Germans</h2>
         <p>Last year, a friend invited me to go with him to see a metal band called “Herr Metal” that he was going to for his birthday. I had never been the biggest fan of the genre, but I decided to go along just because of how curious I was. It was certainly an interesting experience, so much so that I decided to go see the same band perform again this year, this time with some more friends. I have listened to more metal music since then, so I would be able to appreciate the performance a bit more.</p>
@@ -45,7 +45,7 @@ export default function Note5() {
         <figure className="note-figure">
             <img src={cover} alt="A low effort snapshot from the start of the concert." className="note-inline-image" />
             <figcaption>A low effort snapshot from the start of the concert.</figcaption>
-            <span className="image-source">Source: <a href='https://www.google.com' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href={cover} target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>A Night at the Opera</h2>
         <p>Finally, in a performance that could not be as far removed from a metal concert, I recently saw Les Miserables at the Kennedy Center in DC. I had never read the original novel or watched the movie, but I was aware of the general plot and historical context behind the musical. Thus, I was very excited to see a full performance of one of the most famous modern musicals. I wish I had time to read the novel before seeing the play, but unfortunately Hugo’s original story is about 1,500 pages long, so I relied on a mere summary instead.</p>
@@ -55,7 +55,7 @@ export default function Note5() {
         <figure className="note-figure">
             <img src={kennedy} alt="A picture from inside the Kennedy Center before Les Mis started." className="note-inline-image" />
             <figcaption>A picture from inside the Kennedy Center before Les Mis started.</figcaption>
-            <span className="image-source">Source: <a href='https://www.google.com' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href={kennedy} target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
 
         <div className="note-nav">

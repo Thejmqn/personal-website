@@ -33,7 +33,7 @@ export default function Note0() {
         <figcaption>
           Sometimes I just feel like yapping.
           <br />
-          <span className="image-source">Source: <a href="https://www.nrm.org/2012/01/norman-rockwells-four-freedoms/" target="_blank" rel="noopener noreferrer">Normal Rockwell</a></span>
+          <span className="image-source"> <a href="https://www.nrm.org/2012/01/norman-rockwells-four-freedoms/" target="_blank" rel="noopener noreferrer">Source</a></span>
         </figcaption>
       </figure>
       <h2>What's the Deal with Airline Food?</h2>
@@ -46,6 +46,8 @@ export default function Note0() {
         <figcaption>
           The airplane food I got on a flight to London. Honestly was not that bad.
         </figcaption>
+        <br />
+          <span className="image-source"> <a href={airplane_food} target="_blank" rel="noopener noreferrer">Source</a></span>
       </figure>
       <div className="note-nav">
         {prevNote && <Link to={`${window.location.pathname}/../${prevNote.link}`} className="note-nav-link">← {prevNote.title}</Link>}

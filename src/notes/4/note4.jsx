@@ -26,7 +26,7 @@ export default function Note4() {
         <figure className="note-figure">
             <img src={anthem} alt="The original score with music of the Star-Spangled Banner." className="note-inline-image" />
             <figcaption>The original score with music of the Star-Spangled Banner.</figcaption>
-            <span className="image-source">Source: <a href='https://commons.wikimedia.org/wiki/File:Star\_Spangled\_Banner\_(Carr' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://commons.wikimedia.org/wiki/File:Star\_Spangled\_Banner\_(Carr' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>The Anthem Criteria</h2>
         <p>To narrow down the search for the next anthem, some criteria need to be established. There are hundreds of possible songs that theoretically could be suggested, but I would say there are only about 25 good choices at most. I have come up with five criteria that all candidates must fulfill to be considered.</p>
@@ -40,7 +40,7 @@ export default function Note4() {
         <figure className="note-figure">
             <img src={game} alt="The original score with music of the Star-Spangled Banner." className="note-inline-image" />
             <figcaption>The Star-Spangled banner before a Giants game.</figcaption>
-            <span className="image-source">Source: <a href='https://www.marines.mil/Photos/igphoto/2000006235/' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://www.marines.mil/Photos/igphoto/2000006235/' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>The Great Choices</h2>
         <h3> Number 1: America the Beautiful</h3>
@@ -56,7 +56,7 @@ export default function Note4() {
         <figure className="note-figure">
             <img src={tiers} alt="A tier list of the candidates for the new national anthem." className="note-inline-image" />
             <figcaption>A tier list of the candidates for the new national anthem.</figcaption>
-            <span className="image-source">Source: <a href='https://www.tierking.com/text/rank/3797/' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"> <a href='https://www.tierking.com/text/rank/3797/' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
         <h2>The Average and Fun Choices</h2>
         <p>The five songs I listed are the five songs that I firmly believe would be better choices for the national anthem than the Star-Spangled Banner. However, there are some other songs that fit the criteria that I mentioned above, so I feel obligated to mention them. Some of these choices are serious, while some of them are just for fun (although some people might have the fun ones at their number one spot, which I respect).</p>
@@ -69,7 +69,7 @@ export default function Note4() {
         <figure className="note-figure">
             <img src={baseball} alt="The Star-Spangled banner before a Baseball game." className="note-inline-image" />
             <figcaption>The Star-Spangled banner before a Baseball game.</figcaption>
-            <span className="image-source">Source: <a href='https://www.dvidshub.net/image/98160/sailors-hold-american-flag-baseball-game/' target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+            <span className="image-source"><a href='https://www.dvidshub.net/image/98160/sailors-hold-american-flag-baseball-game/' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
 
         <div className="note-nav">
