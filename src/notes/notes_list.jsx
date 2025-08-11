@@ -5,11 +5,13 @@ import game from "./2/long_game.jpg";
 import statue from "./3/statue.jpg"
 import anthem from "./4/game.jpg";
 import cover from "./5/cover.jpg";
+import sudley from "./6/visionworks.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
 import Note4 from "./4/note4";
 import Note5 from "./5/note5";
+import Note6 from "./6/note6";
 
 const notes_list = [
     {
@@ -59,6 +61,14 @@ const notes_list = [
       link: "concert",
       date: "July 27th, 2025",
       element: <Note5 />
+    },
+    {
+      title: "The Pride of Prince William",
+      preview: "An in-depth tour of Sudley Road in Prince William County, a road which defines American transportation. Welcome to Manassas.",
+      image: sudley,
+      link: "sudley",
+      date: "August 10th, 2025",
+      element: <Note6 />
     }
 ];
 
