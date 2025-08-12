@@ -5,7 +5,7 @@ import game from "./2/long_game.jpg";
 import statue from "./3/statue.jpg"
 import anthem from "./4/game.jpg";
 import cover from "./5/cover.jpg";
-import sudley from "./6/visionworks.jpg";
+import sudley from "./6/traffic.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -64,7 +64,7 @@ const notes_list = [
     },
     {
       title: "The Pride of Prince William",
-      preview: "An in-depth tour of Sudley Road in Prince William County, a road which defines American transportation. Welcome to Manassas.",
+      preview: "An tour and review of Sudley Road, a road riding through the heart of Prince William County. What's in store for the future of Sudley?",
       image: sudley,
       link: "sudley",
       date: "August 10th, 2025",
