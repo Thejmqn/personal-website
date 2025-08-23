@@ -34,7 +34,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/notes" element={<Notes />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/work" element={<Placeholder title="Work" />} />
           <Route path="/misc" element={<Placeholder title="Misc" />} />
           <Route path="/contact" element={<Contact darkMode={isDarkMode}/>} />
           {notes_list.map((note, i) => (<>
