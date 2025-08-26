@@ -21,7 +21,7 @@ const notes_list = [
       preview: "A brief explantation into the purpose of me writing all of this, and how I (hope to) continue doing so in the future. Also, what's the deal with airline food?",
       image: wanderer,
       link: "intro",
-      date: "May 25th, 2025",
+      date: "May 18th, 2025",
       element: <Note0 />
     },
     {
