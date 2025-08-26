@@ -6,12 +6,14 @@ import statue from "./3/statue.jpg"
 import anthem from "./4/game.jpg";
 import cover from "./5/cover.jpg";
 import sudley from "./6/traffic.jpg";
+import tech from "./7/tech.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
 import Note4 from "./4/note4";
 import Note5 from "./5/note5";
 import Note6 from "./6/note6";
+import Note7 from "./7/note7";
 
 const notes_list = [
     {
@@ -69,6 +71,14 @@ const notes_list = [
       link: "sudley",
       date: "August 10th, 2025",
       element: <Note6 />
+    },
+    {
+      title: "Tony Elliott's Big Bet",
+      preview: "It's Bowl or Bust for Tony Elliott and UVA Football. Let's estimate the chance of victory for every UVA Football game this season.",
+      image: tech,
+      link: "elliott",
+      date: "August 24th, 2025",
+      element: <Note7 />
     }
 ];
 
