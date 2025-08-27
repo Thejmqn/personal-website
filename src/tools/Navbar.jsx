@@ -44,7 +44,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
           <SocialLink logo={isDarkMode ? darkInstagramLogo : instagramLogo} link="https://instagram.com/joemoraninsta" description="Instagram" />
           <SocialLink logo={isDarkMode ? darkGithubLogo : githubLogo} link="https://github.com/Thejmqn" description="GitHub" />
           <SocialLink logo={isDarkMode ? darkBlueskyLogo : blueskyLogo} link="https://bsky.app/profile/joemoran.bsky.social" description="BlueSky" />
-          <SocialLink logo={isDarkMode ? darkLinkedinLogo : linkedinLogo} link="https://www.linkedin.com/in/joseph-moran-in/" description="LinkedIn" />
+          <SocialLink logo={isDarkMode ? darkLinkedinLogo : linkedinLogo} link="https://www.linkedin.com/in/joseph-moran-linkedin/" description="LinkedIn" />
         </div>
         <button className="dark-mode-toggle" onClick={toggleDarkMode}>
           {isDarkMode ? "🌙" : "☀️"}

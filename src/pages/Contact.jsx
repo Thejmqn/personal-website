@@ -52,7 +52,7 @@ export default function Contact({ darkMode }) {
         <a href="https://instagram.com/joemoraninsta" target="_blank" rel="noopener noreferrer">
           <img src={darkMode ? darkInstagramLogo : instagramLogo} alt="Instagram" />
         </a>
-        <a href="https://www.linkedin.com/in/joseph-moran-in/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/joseph-moran-linkedin/" target="_blank" rel="noopener noreferrer">
           <img src={darkMode ? darkLinkedinLogo : linkedinLogo} alt="LinkedIn" />
         </a>
       </div>
