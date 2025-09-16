@@ -16,7 +16,7 @@ export default function Contact({ darkMode }) {
         },
         {
         label: "School related",
-        address: "jav3fh@virginia.edu"
+        address: "joemoran@email.virginia.edu"
         },
         {
         label: "Development / technical questions",
