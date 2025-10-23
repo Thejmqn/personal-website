@@ -7,6 +7,8 @@ import darkGithubLogo from "./../assets/github_logo_dark.png";
 import darkLinkedinLogo from "./../assets/linkedin_logo_dark.png";
 import darkInstagramLogo from "./../assets/instagram_logo_dark.png";
 import darkBlueskyLogo from "./../assets/bluesky_logo_dark.png";
+import youtubeLogo from "./../assets/youtube_logo.png";
+import darkYoutubeLogo from "./../assets/youtube_logo_dark.png";
 
 export default function Contact({ darkMode }) {
     const emails = [
@@ -54,6 +56,9 @@ export default function Contact({ darkMode }) {
         </a>
         <a href="https://www.linkedin.com/in/joseph-moran-in/" target="_blank" rel="noopener noreferrer">
           <img src={darkMode ? darkLinkedinLogo : linkedinLogo} alt="LinkedIn" />
+        </a>
+        <a href="https://www.youtube.com/@JoeMoranYT" target="_blank" rel="noopener noreferrer">
+          <img src={darkMode ? darkYoutubeLogo : youtubeLogo} alt="YouTube" />
         </a>
       </div>
     </div>

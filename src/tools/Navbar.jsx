@@ -4,11 +4,11 @@ import "./Navbar.css";
 import instagramLogo from "./../assets/instagram_logo.png";
 import linkedinLogo from "./../assets/linkedin_logo.png";
 import githubLogo from "./../assets/github_logo.png";
-import blueskyLogo from "./../assets/bluesky_logo.png";
+import youtubeLogo from "./../assets/youtube_logo.png";
 import darkGithubLogo from "./../assets/github_logo_dark.png";
 import darkLinkedinLogo from "./../assets/linkedin_logo_dark.png";
 import darkInstagramLogo from "./../assets/instagram_logo_dark.png";
-import darkBlueskyLogo from "./../assets/bluesky_logo_dark.png";
+import darkYoutubeLogo from "./../assets/youtube_logo_dark.png";
 import { HamburgerIcon, CloseIcon } from "./Icons";
 
 const SocialLink = ({ logo, link, description }) => {
@@ -43,7 +43,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
         <div className="social-links" onClick={() => setIsMobileMenuOpen(false)}>
           <SocialLink logo={isDarkMode ? darkInstagramLogo : instagramLogo} link="https://instagram.com/joemoraninsta" description="Instagram" />
           <SocialLink logo={isDarkMode ? darkGithubLogo : githubLogo} link="https://github.com/Thejmqn" description="GitHub" />
-          <SocialLink logo={isDarkMode ? darkBlueskyLogo : blueskyLogo} link="https://bsky.app/profile/joemoran.bsky.social" description="BlueSky" />
+          <SocialLink logo={isDarkMode ? darkYoutubeLogo : youtubeLogo} link="https://www.youtube.com/@JoeMoranYT" description="YouTube" />
           <SocialLink logo={isDarkMode ? darkLinkedinLogo : linkedinLogo} link="https://www.linkedin.com/in/joseph-moran-in/" description="LinkedIn" />
         </div>
         <button className="dark-mode-toggle" onClick={toggleDarkMode}>
