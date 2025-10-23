@@ -1,4 +1,4 @@
-import wanderer from "./0/wanderer.jpg";
+import joe from "./0/joe.jpg";
 import Note0 from "./0/note0";
 import leo from "./1/leo_xiv.jpg";
 import game from "./2/long_game.jpg";
@@ -7,6 +7,9 @@ import anthem from "./4/game.jpg";
 import cover from "./5/cover.jpg";
 import sudley from "./6/traffic.jpg";
 import tech from "./7/tech.jpg";
+import tunnel from "./8/tunnel.jpg";
+import reading from "./9/reading.jpg";
+import stanford from "./10/stanford.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -19,7 +22,7 @@ const notes_list = [
     {
       title: "What's the Deal with Joe Moran?",
       preview: "A brief explantation into the purpose of me writing all of this, and how I (hope to) continue doing so in the future. Also, what's the deal with airline food?",
-      image: wanderer,
+      image: joe,
       link: "intro",
       date: "May 18th, 2025",
       element: <Note0 />
@@ -79,7 +82,31 @@ const notes_list = [
       link: "elliott",
       date: "August 24th, 2025",
       element: <Note7 />
-    }
+    },
+    {
+      title: "Winning the Rat Race",
+      preview: "Many people describe life at UVA as a never-ending \"rat-race\". So how, as a rat, do you win this race?",
+      image: tunnel,
+      link: "tunnel",
+      date: "September 14th, 2025",
+      element: <Note7 />
+    },
+    {
+      title: "A Letter to Noone",
+      preview: "How much of what is written is actually read? I publish some of my most boring and bureaucratic papers I have written this semester.",
+      image: reading,
+      link: "letter",
+      date: "October 5th, 2025",
+      element: <Note7 />
+    },
+    {
+      title: "Building Band Better",
+      preview: "Examining the process through which an FBS Power 4 marching band, of which I am a member, prepares for a football game in one week.",
+      image: stanford,
+      link: "band",
+      date: "October 26th, 2025",
+      element: <Note7 />
+    },
 ];
 
 export default notes_list;
