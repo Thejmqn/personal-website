@@ -17,6 +17,7 @@ import Note4 from "./4/note4";
 import Note5 from "./5/note5";
 import Note6 from "./6/note6";
 import Note7 from "./7/note7";
+import Note9 from "./9/note9";
 
 const notes_list = [
     {
@@ -97,7 +98,7 @@ const notes_list = [
       image: reading,
       link: "letter",
       date: "October 5th, 2025",
-      element: <Note7 />
+      element: <Note9 />
     },
     {
       title: "Building Band Better",
