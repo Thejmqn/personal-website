@@ -19,6 +19,7 @@ import Note6 from "./6/note6";
 import Note7 from "./7/note7";
 import Note8 from "./8/note8";
 import Note9 from "./9/note9";
+import Note10 from "./10/note10";
 
 const notes_list = [
     {
@@ -106,8 +107,8 @@ const notes_list = [
       preview: "Examining the process through which an FBS Power 4 marching band, of which I am a member, prepares for a football game in one week.",
       image: stanford,
       link: "band",
-      date: "October 26th, 2025",
-      element: <Note7 />
+      date: "November 2nd, 2025",
+      element: <Note10 />
     },
 ];
 

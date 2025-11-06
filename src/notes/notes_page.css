@@ -229,3 +229,33 @@ body.dark-mode .list-element::marker {
 body.dark-mode .note-container h3 {
   color: #ddd;
 }
+
+/* Responsive video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Keeps videos from being too wide on large screens */
+  margin: 2rem auto; /* Centers the video block with spacing */
+  aspect-ratio: 16 / 9; /* Modern approach to maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive iframe styling */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* replaces deprecated frameborder */
+  border-radius: 12px;
+}
+
+/* Optional: Adjust for dark mode */
+@media (prefers-color-scheme: dark) {
+  .video-container {
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+  }
+}
