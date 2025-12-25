@@ -10,6 +10,8 @@ import tech from "./7/tech.jpg";
 import tunnel from "./8/tunnel.jpg";
 import reading from "./9/reading.jpg";
 import stanford from "./10/stanford.jpg";
+import bus from "./11/bus.jpg";
+import darden from "./12/darden.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -20,6 +22,8 @@ import Note7 from "./7/note7";
 import Note8 from "./8/note8";
 import Note9 from "./9/note9";
 import Note10 from "./10/note10";
+import Note11 from "./11/note11";
+import Note12 from "./12/note12";
 
 const notes_list = [
     {
@@ -88,7 +92,7 @@ const notes_list = [
     },
     {
       title: "Winning the Rat Race",
-      preview: "Many people describe life at UVA as a never-ending \"rat-race\". So how, as a rat, do you win this race?",
+      preview: "Many people describe life as a never-ending \"rat-race\". So how, as a rat, do you win this race? Tunnels, of course.",
       image: tunnel,
       link: "tunnel",
       date: "September 14th, 2025",
@@ -109,6 +113,22 @@ const notes_list = [
       link: "band",
       date: "November 2nd, 2025",
       element: <Note10 />
+    },
+    {
+      title: "Revenge of the Subsystem",
+      preview: "Appreciating and hating the subsystems that make up the \"system\" of life. How many things do we never notice until they break down?",
+      image: bus,
+      link: "subsystem",
+      date: "November 23rd, 2025",
+      element: <Note11 />
+    },
+    {
+      title: "When McKinsey Comes to U",
+      preview: "As expected, the consultants are the ones in charge at the University. I'll share my work from this semester so I don't get laid off.",
+      image: darden,
+      link: "mckinsey",
+      date: "December 21st, 2025",
+      element: <Note12 />
     },
 ];
 
