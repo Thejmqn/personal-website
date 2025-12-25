@@ -27,7 +27,8 @@ export default function Note12() {
             <figcaption>I have to admit, President Beardsley has quite a charming smile. Got to have that for making deals.</figcaption>
             <span className="image-source"><a href='https://news.virginia.edu/sites/default/files/Header-SF-PresidentMainStory\_StephanieGross.jpg' target="_blank" rel="noopener noreferrer">Source</a></span>
         </figure>
-
+        <h2>Long-Term Projects</h2>
+        <p><i>Projects will be posted to the <a href="/work">Past work</a> page before the end of the year, and links will be updated here. Apologies for the delay.</i></p>
         <div className="note-nav">
             {prevNote && <Link to={`${window.location.pathname}/../${prevNote.link}`} className="note-nav-link">← {prevNote.title}</Link>}
             {nextNote && <Link to={`${window.location.pathname}/../${nextNote.link}`} className="note-nav-link">{nextNote.title} →</Link>}
