@@ -12,6 +12,7 @@ import reading from "./9/reading.jpg";
 import stanford from "./10/stanford.jpg";
 import bus from "./11/bus.jpg";
 import darden from "./12/darden.jpg";
+import stretch from "./13/storm.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -24,6 +25,7 @@ import Note9 from "./9/note9";
 import Note10 from "./10/note10";
 import Note11 from "./11/note11";
 import Note12 from "./12/note12";
+import Note13 from "./13/note13";
 
 const notes_list = [
     {
@@ -129,6 +131,14 @@ const notes_list = [
       link: "mckinsey",
       date: "December 21st, 2025",
       element: <Note12 />
+    },
+    {
+      title: "March of the Cardiac Cavs",
+      preview: "Marching band perspective and highlights from the winningest season in Virginia football history, and how it happened.",
+      image: stretch,
+      link: "march",
+      date: "January 25th, 2026",
+      element: <Note13 />
     },
 ];
 
