@@ -25,7 +25,7 @@ import Note9 from "./9/note9";
 import Note10 from "./10/note10";
 import Note11 from "./11/note11";
 import Note12 from "./12/note12";
-import Note13 from "./13/note13";
+import Note13 from "./13/Note13";
 
 const notes_list = [
     {
