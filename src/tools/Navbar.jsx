@@ -37,7 +37,7 @@ export default function Navbar({ toggleDarkMode, isDarkMode }) {
       <div className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
         <Link to="/notes" onClick={() => setIsMobileMenuOpen(false)}>Notes</Link>
-        <Link to="/work" onClick={() => setIsMobileMenuOpen(false)}>Past Work</Link>
+        <Link to="https://github.com/Thejmqn" onClick={() => setIsMobileMenuOpen(false)}>Past Work</Link>
         <Link to="/misc" onClick={() => setIsMobileMenuOpen(false)}>Misc</Link>
         <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
         <div className="social-links" onClick={() => setIsMobileMenuOpen(false)}>
