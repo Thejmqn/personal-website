@@ -13,6 +13,7 @@ import stanford from "./10/stanford.jpg";
 import bus from "./11/bus.jpg";
 import darden from "./12/darden.jpg";
 import stretch from "./13/storm.jpg";
+import army from "./14/2-armies.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -26,6 +27,7 @@ import Note10 from "./10/note10";
 import Note11 from "./11/note11";
 import Note12 from "./12/note12";
 import Note13 from "./13/Note13";
+import Note14 from "./14/Note14";
 
 const notes_list = [
     {
@@ -139,6 +141,14 @@ const notes_list = [
       link: "march",
       date: "January 25th, 2026",
       element: <Note13 />
+    },
+    {
+      title: "Has the General Arrived?",
+      preview: "How does a classic computer networking problem relate to sports team tanking and a common texting conundrum?",
+      image: army,
+      link: "texting",
+      date: "February 22nd, 2026",
+      element: <Note14 />
     },
 ];
 
