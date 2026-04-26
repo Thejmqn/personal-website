@@ -14,6 +14,7 @@ import bus from "./11/bus.jpg";
 import darden from "./12/darden.jpg";
 import stretch from "./13/storm.jpg";
 import army from "./14/2-armies.jpg";
+import gatsby from "./15/gatsby.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -28,6 +29,7 @@ import Note11 from "./11/note11";
 import Note12 from "./12/note12";
 import Note13 from "./13/Note13";
 import Note14 from "./14/Note14";
+import Note15 from "./15/Note15";
 
 const notes_list = [
     {
@@ -150,6 +152,14 @@ const notes_list = [
       date: "February 22nd, 2026",
       element: <Note14 />
     },
+    {
+      title: "Gatsby, Jordan and Kim",
+      preview: "When does the main character differ from the protagonist? Is the legendary Andrew Kim the ultimate main character?",
+      image: gatsby,
+      link: "protagonist",
+      date: "April 19th, 2026",
+      element: <Note15 />
+    }
 ];
 
 export default notes_list;
