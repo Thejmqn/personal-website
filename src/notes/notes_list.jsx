@@ -156,7 +156,7 @@ const notes_list = [
       title: "Gatsby, Jordan and Kim",
       preview: "When does the main character differ from the protagonist? Is the legendary Andrew Kim the ultimate main character?",
       image: gatsby,
-      link: "protagonist",
+      link: "kim",
       date: "April 19th, 2026",
       element: <Note15 />
     }
