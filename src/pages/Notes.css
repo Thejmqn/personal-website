@@ -15,6 +15,45 @@
   color: var(--text-color);
 }
 
+/* Tag buttons */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tags-label {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.tags button {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--tag-border);
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.tags button:hover {
+  color: #ffcc00;
+  box-shadow: 0 2px 6px var(--tag-shadow);
+}
+
+.tags button.active {
+  background-color: var(--tag-active-bg);
+  border-color: var(--tag-active-border);
+  color: var(--tag-active-text);
+}
+
 .notes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -55,17 +94,36 @@
   color: var(--text-color-light);
 }
 
+/* Light mode variables */
+body {
+  --card-bg: #fff;
+  --text-color: #000;
+  --text-color-light: #444;
+  --tag-bg: #f5f5f5;
+  --tag-text: #333;
+  --tag-border: #ddd;
+  --tag-bg-hover: #e8e8e8;
+  --tag-border-hover: #999;
+  --tag-shadow: rgba(0, 0, 0, 0.08);
+  --tag-active-bg: #333;
+  --tag-active-border: #333;
+  --tag-active-text: #fff;
+}
+
 /* Dark mode variables */
 body.dark-mode {
   --card-bg: #1f1f1f;
   --text-color: #fff;
   --text-color-light: #ccc;
-}
-
-body {
-  --card-bg: #fff;
-  --text-color: #000;
-  --text-color-light: #444;
+  --tag-bg: #2a2a2a;
+  --tag-text: #e0e0e0;
+  --tag-border: #444;
+  --tag-bg-hover: #363636;
+  --tag-border-hover: #666;
+  --tag-shadow: rgba(0, 0, 0, 0.3);
+  --tag-active-bg: #fff;
+  --tag-active-border: #fff;
+  --tag-active-text: #000;
 }
 
 .note-date {

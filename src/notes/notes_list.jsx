@@ -38,7 +38,8 @@ const notes_list = [
       image: joe,
       link: "intro",
       date: "May 18th, 2025",
-      element: <Note0 />
+      element: <Note0 />,
+      tags: ["Personal", "Misc"]
     },
     {
       title: "Does the Pope have to pay taxes?",
@@ -46,7 +47,8 @@ const notes_list = [
       image: leo, // https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_4.png
       link: "pope",
       date: "June 1st, 2025",
-      element: <Note1 />
+      element: <Note1 />,
+      tags: ["Politics"]
     },
     {
       title: "What's the most boring baseball game of all time?",
@@ -54,7 +56,8 @@ const notes_list = [
       image: game,
       link: "baseball",
       date: "June 15th, 2025",
-      element: <Note2 />
+      element: <Note2 />,
+      tags: ["Sports", "Technology"]
     },
     {
       title: "The Jim Ryan situation is crazy...",
@@ -62,7 +65,8 @@ const notes_list = [
       image: statue,
       link: "jim",
       date: "June 29th, 2025",
-      element: <Note3 />
+      element: <Note3 />,
+      tags: ["UVA", "Politics"]
     },
     {
       title: "The Star-Spangled Banner is Boring",
@@ -70,7 +74,8 @@ const notes_list = [
       image: anthem,
       link: "anthem",
       date: "July 13th, 2025",
-      element: <Note4 />
+      element: <Note4 />,
+      tags: ["Politics", "Music"]
     },
     {
       title: "Two Covers and an Album",
@@ -78,7 +83,8 @@ const notes_list = [
       image: cover,
       link: "concert",
       date: "July 27th, 2025",
-      element: <Note5 />
+      element: <Note5 />,
+      tags: ["Personal", "Music"]
     },
     {
       title: "The Pride of Prince William",
@@ -86,7 +92,8 @@ const notes_list = [
       image: sudley,
       link: "sudley",
       date: "August 10th, 2025",
-      element: <Note6 />
+      element: <Note6 />,
+      tags: ["Engineering", "Video"]
     },
     {
       title: "Tony Elliott's Big Bet",
@@ -94,7 +101,8 @@ const notes_list = [
       image: tech,
       link: "elliott",
       date: "August 24th, 2025",
-      element: <Note7 />
+      element: <Note7 />,
+      tags: ["UVA", "Sports"]
     },
     {
       title: "Winning the Rat Race",
@@ -102,7 +110,8 @@ const notes_list = [
       image: tunnel,
       link: "tunnel",
       date: "September 14th, 2025",
-      element: <Note8 />
+      element: <Note8 />,
+      tags: ["UVA", "Video", "Misc"]
     },
     {
       title: "A Letter to Noone",
@@ -110,7 +119,8 @@ const notes_list = [
       image: reading,
       link: "letter",
       date: "October 5th, 2025",
-      element: <Note9 />
+      element: <Note9 />,
+      tags: ["UVA", "Engineering", "Misc"]
     },
     {
       title: "Building Band Better",
@@ -118,7 +128,8 @@ const notes_list = [
       image: stanford,
       link: "band",
       date: "November 2nd, 2025",
-      element: <Note10 />
+      element: <Note10 />,
+      tags: ["UVA", "Music", "Personal", "Video"]
     },
     {
       title: "Revenge of the Subsystem",
@@ -126,7 +137,8 @@ const notes_list = [
       image: bus,
       link: "subsystem",
       date: "November 23rd, 2025",
-      element: <Note11 />
+      element: <Note11 />,
+      tags: ["Technology", "UVA"]
     },
     {
       title: "When McKinsey Comes to U",
@@ -134,7 +146,8 @@ const notes_list = [
       image: darden,
       link: "mckinsey",
       date: "December 21st, 2025",
-      element: <Note12 />
+      element: <Note12 />,
+      tags: ["UVA", "Politics"]
     },
     {
       title: "March of the Cardiac Cavs",
@@ -142,7 +155,8 @@ const notes_list = [
       image: stretch,
       link: "march",
       date: "January 25th, 2026",
-      element: <Note13 />
+      element: <Note13 />,
+      tags: ["UVA", "Music", "Video", "Personal"]
     },
     {
       title: "Has the General Arrived?",
@@ -150,7 +164,8 @@ const notes_list = [
       image: army,
       link: "texting",
       date: "February 22nd, 2026",
-      element: <Note14 />
+      element: <Note14 />,
+      tags: ["Technology", "Sports", "Engineering"]
     },
     {
       title: "Gatsby, Jordan and Kim",
@@ -158,7 +173,8 @@ const notes_list = [
       image: gatsby,
       link: "kim",
       date: "April 19th, 2026",
-      element: <Note15 />
+      element: <Note15 />,
+      tags: ["UVA", "Personal", "Sports", "Video"]
     }
 ];
 
