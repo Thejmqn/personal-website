@@ -15,6 +15,7 @@ import darden from "./12/darden.jpg";
 import stretch from "./13/storm.jpg";
 import army from "./14/2-armies.jpg";
 import gatsby from "./15/gatsby.jpg";
+import districts from "./16/districts.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -30,6 +31,7 @@ import Note12 from "./12/note12";
 import Note13 from "./13/Note13";
 import Note14 from "./14/Note14";
 import Note15 from "./15/Note15";
+import Note16 from "./16/Note16";
 
 const notes_list = [
     {
@@ -175,6 +177,15 @@ const notes_list = [
       date: "April 19th, 2026",
       element: <Note15 />,
       tags: ["UVA", "Personal", "Sports", "Video"]
+    },
+    {
+      title: "The Dual-District Dilemma",
+      preview: "The nationwide redistricting battle overlooks the fact that the existence of districts creates an inherent problem.",
+      image: districts,
+      link: "redistricting",
+      date: "May 24th, 2026",
+      element: <Note16 />,
+      tags: ["Politics"]
     }
 ];
 
