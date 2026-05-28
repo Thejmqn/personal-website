@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Notes() {
   const tags = ["All", "Engineering", "Misc", "Music", "UVA", "Personal", "Politics", "Sports", "Technology", "Video"];
-  const [tag, setTag] = useState("");
+  const [tag, setTag] = useState("All");
 
   return (
     <div className="notes-container">
