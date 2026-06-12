@@ -16,6 +16,7 @@ import stretch from "./13/storm.jpg";
 import army from "./14/2-armies.jpg";
 import gatsby from "./15/gatsby.jpg";
 import districts from "./16/districts.jpg";
+import trophy from "./17/trophy.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -32,6 +33,7 @@ import Note13 from "./13/Note13";
 import Note14 from "./14/Note14";
 import Note15 from "./15/Note15";
 import Note16 from "./16/Note16";
+import Note17 from "./17/Note17";
 
 const notes_list = [
     {
@@ -186,6 +188,15 @@ const notes_list = [
       date: "May 24th, 2026",
       element: <Note16 />,
       tags: ["Politics"]
+    },
+    {
+      title: "Run Like a Data Center",
+      preview: "The world-famous Data Center 4.99999K returns to Ashburn, Virginia for the fourth-ever time. Welcome to Data Center Alley.",
+      image: trophy,
+      link: "datacenter",
+      date: "June 7th, 2026",
+      element: <Note17 />,
+      tags: ["Personal", "Video", "Misc"]
     }
 ];
 
