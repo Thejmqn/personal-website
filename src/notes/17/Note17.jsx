@@ -2,6 +2,9 @@
 import notes_list from "../notes_list";
 import { Link } from "react-router-dom";
 import './../notes_page.css';
+import lcp from './lcp.jpg';
+import map from './map.png';
+import trophy from './trophy.jpg';
 export default function Note17() {
     const noteIndex = 17;
     const note = notes_list[noteIndex];
@@ -16,17 +19,33 @@ export default function Note17() {
         <h1>{note.title}</h1>
         <div className="note-date">Published on {note.date}</div>
         <h2>Fly Like a Packet</h2>
-        <p>Article to be updated shortly - see video below temporarily.</p>
+        <p>Last weekend, while driving home from work, I encountered a <a href="https://en.wikipedia.org/wiki/Variable-message_sign" target="_blank" rel="noopener noreferrer">portable variable message sign</a> (shoutout traffic design) with a notification on it that immediately confused me: “Local traffic only – Road closed for Cloud Walk.” What on Earth is a Cloud Walk? It was surprisingly challenging to figure out what this sign meant. When I arrived home, I had to spend a solid five minutes searching online to find any references to this event online. I am usually quite skilled at searching for hidden information on the web, so spending five minutes to find this event was an anomaly. After some research, I found out the “Cloud Walk” referred to the <a href="https://runsignup.com/Race/VA/Ashburn/TheCloudRun" target="_blank" rel="noopener noreferrer">4th annual Cloud Run</a>, a 5k event hosted by construction and technology companies to, according to its website, “celebrate the data center industry … and build connections between data center professionals, jobseekers, students, and members of our local community.”</p>
+        <p>The premise of a 5k to celebrate data centers was so absurd that I knew I had to sign up for this race. Especially as someone who currently works in the technology infrastructure sector, I had to check it out. Nowhere else in the world other than in Loudoun County, Virginia, would there be a race themed around data centers. In fact, this race was not actually a 5k, but a 4.99999k, to celebrate the data centers having an average of <a href="https://en.wikipedia.org/wiki/High_availability#Percentage_calculation" target="_blank" rel="noopener noreferrer">five-nines of uptime</a>, or 5 minutes of downtime per year. Truly, this race is a once-in-a-lifetime experience. Before discussing the race though, there are two questions the existence of such an absurd race merits: Why is the data center industry holding a charity 5k, and why in Ashburn, Virginia?</p>
+        <figure className="note-figure">
+            <img src={map} alt="A map of the route of the world-famous Data Center 4.99999K." className="note-inline-image" />
+            <figcaption>A map of the route of the world-famous Data Center 4.99999K.</figcaption>
+            <span className="image-source"><a href='https://runsignup.com/Race/VA/Ashburn/TheCloudRun' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2>Capital of the Internet</h2>
+        <p>The discourse surrounding data centers has recently become particularly heated over the last year or two due to the rise of Artificial Intelligence in the popular consciousness. In particular, there is a growing vision of huge gray boxes being built around the country in order to superpower LLMs that will take everyone’s jobs and water. While these concerns are valid, they <a href="https://www.forbes.com/councils/forbestechcouncil/2026/06/12/the-truth-about-ai-data-centers-and-why-it-matters/" target="_blank" rel="noopener noreferrer">generally overstate and confuse</a> the impacts and purpose of data centers. In truth, data centers have been around for a long time, much longer than most people have been talking about AI, and usually serve purposes as dull as their gray color. However, the negative publicity data centers have been receiving should serve as an answer to the first question: The data center industry is holding this race for some positive PR. The second question has a bit more to it.</p>
+        <p>Loudoun County and Ashburn, Virginia have been known “data center alley” informally, and the Dulles Technology Corrido formally, for <a href="https://www.datacenterknowledge.com/business/washpost-profiles-ashburn-data-center-alley-" target="_blank" rel="noopener noreferrer">at least 15 years now</a>. Ashburn, VA has been up there with cities like London, NYC, Singapore, and Tokyo on the list on server and Internet hubs <a href="https://www.youtube.com/watch?v=HIwiw_DoXL0" target="_blank" rel="noopener noreferrer">for just as long</a>. The reasoning is mostly historic. Most sources attribute Loudoun County’s early start in the Internet infrastructure race to AOL’s headquarters being located in Dulles, Virginia at the start of the Internet. Another, lesser known but equally important player in the rise of Dulles/Ashburn was <a href="https://en.wikipedia.org/wiki/UUNET" target="_blank" rel="noopener noreferrer">UUnet</a>, which would later become Verizon Business. Since AOL and UUNet developed some basic initial infrastructure, other companies could piggyback off their investment and build easily build their own resources. An Internet Butterfly effect occurred, where one or two companies early decisions to build in Loudoun County would be the basis for a huge wave of infrastructure and data centers in the future.</p>
+        <p>Northern Virginia’s location would prove to be critical for the development of data centers as well. Geographically, there are few natural disasters that can occur in the area that could threaten the availability or uptime of data centers. Other areas of the country are too vulnerable to events such as earthquakes, hurricanes, or tornados, that are impossible to fully prepare for. Politically, Loudoun County’s location close to Washington, DC has allowed it to take advantage of government investment and contracts, particularly in the resource-heavy defense industry. This has all led to the claim that <a href="https://www.vedp.org/news/dawn-data" target="_blank" rel="noopener noreferrer">70% of the entire world’s internet traffic</a> flows through Loudoun County (although it is now likely closer to a smaller, <a href="https://cardinalnews.org/2025/07/29/the-famous-claim-that-70-of-the-worlds-internet-traffic-goes-through-northern-virginia-is-wrong/" target="_blank" rel="noopener noreferrer">but still impressive, 30%</a>). There is much more to say about the data center industry, and I will write another more in-depth article on the politics of it in the not-so-distant future. However, now that the two central questions are answered, it is time for a race.</p>
+        <figure className="note-figure">
+            <img src={lcp} alt="The progressive development of data centers along Loudoun County Parkway over the past ten years." className="note-inline-image" />
+            <figcaption>The progressive development of data centers along Loudoun County Parkway over the past ten years.</figcaption>
+            <span className="image-source"><a href='https://maps.app.goo.gl/bNeevzLmxAcZjff4A' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2>The Data Center 4.99999K</h2>
+        <p>The below video showcases my experiences before, during, and after, the world-famous Data Center 4.99999K. Here’s a <a href="https://runsignup.com/Race/Results/176913" target="_blank" rel="noopener noreferrer">link to the results</a> as well, with myself finishing 18th out of about 325 people.</p>
         <div className="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/NMbtycvSIpo?si=eXBwD0Nymbe6Whg6" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
+        <iframe
+            src="https://www.youtube.com/embed/NMbtycvSIpo?si=eXBwD0Nymbe6Whg6"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
         </iframe>
         </div>
-
         <div className="note-nav">
             {prevNote && <Link to={`${window.location.pathname}/../${prevNote.link}`} className="note-nav-link">← {prevNote.title}</Link>}
             {nextNote && <Link to={`${window.location.pathname}/../${nextNote.link}`} className="note-nav-link">{nextNote.title} →</Link>}
