@@ -17,6 +17,7 @@ import army from "./14/2-armies.jpg";
 import gatsby from "./15/gatsby.jpg";
 import districts from "./16/districts.jpg";
 import trophy from "./17/trophy.jpg";
+import vissim from "./18/vissim.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -34,6 +35,7 @@ import Note14 from "./14/Note14";
 import Note15 from "./15/Note15";
 import Note16 from "./16/Note16";
 import Note17 from "./17/Note17";
+import Note18 from "./18/Note18";
 
 const notes_list = [
     {
@@ -197,6 +199,15 @@ const notes_list = [
       date: "June 7th, 2026",
       element: <Note17 />,
       tags: ["Personal", "Video", "Misc"]
+    },
+    {
+      title: "A Moment on Mooreview",
+      preview: "Exploring the history and design of a seemingly mundane intersection while creating a simulation with a new tool.",
+      image: vissim,
+      link: "traffic",
+      date: "June 28th, 2026",
+      element: <Note18 />,
+      tags: ["Engineering"]
     }
 ];
 
