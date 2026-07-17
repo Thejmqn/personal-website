@@ -34,7 +34,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/notes" element={<Notes />} />
-          <Route path="/work" element={<Placeholder title="Work" />} />
+          <Route path="/work" element={<Work />} />
           <Route path="/misc" element={<Placeholder title="Misc" />} />
           <Route path="/contact" element={<Contact darkMode={isDarkMode}/>} />
           {notes_list.map((note, i) => (<>
@@ -42,9 +42,9 @@ export default function App() {
               <Route path={"/notes/" + note.link} element={note.element} />
           </>))}
           <Route path="/notes/latest" element={notes_list[notes_list.length-1].element} />
-          {work_list.map(work => 
-              <Route path={"/work/" + work.link} element={work.element} />
-          )}
+          {work_list.map((work, index) => (
+              <Route key={`${work.link || index}`} path={"/work/" + work.link} element={work.element} />
+          ))}
           {misc_list.map(misc => 
               <Route path={"/misc/" + misc.link} element={misc.element} />
           )}
