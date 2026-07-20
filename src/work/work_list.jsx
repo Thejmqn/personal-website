@@ -13,6 +13,10 @@ import telecom from "./telecom/telecom.png";
 import Codes from "./codes/Codes";
 import CodesPage from "./codes/CodesPage";
 import SmartBuildingsPage from "./buildings/SmartBuildingsPage";
+import GhostsPage from "./ghosts/GhostsPage";
+import OHillPage from "./ohill/OHillPage";
+import DomainsPage from "./domains/DomainsPage";
+import PinballPage from "./pinball/PinballPage";
 
 const work_list = [
   {
@@ -36,28 +40,32 @@ const work_list = [
     title: "Ghosts on Grounds",
     summary: "A website for a ghost tour at the University.",
     image: ghost,
-    link: "https://www.ghostsongrounds.org/"
+    link: "ghosts",
+    element: <GhostsPage />
   },
   {
     id: "civil-field",
     title: "Civil Redesign",
     summary: "Stormwater management and grading for a new project on a field.",
     image: stormwater,
-    link: "ohill"
+    link: "ohill",
+    element: <OHillPage />
   },
   {
     id: "domains",
     title: "Domain Trickery",
     summary: "Experimenting with web domains and the dangers of certain TLDs.",
     image: phishing,
-    link: "domains"
+    link: "domains",
+    element: <DomainsPage />
   },
   {
     id: "pinball",
     title: "The Pinball Wizard",
     summary: "Brief essays on the material composition of various parts of the pinball machine.",
     image: silverball,
-    link: "pinball"
+    link: "pinball",
+    element: <PinballPage />
   },
   {
     id: "nvidia",
