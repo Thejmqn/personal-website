@@ -10,13 +10,17 @@ import poster from "./pbp/poster.png";
 import nvidia from "./nvidia/nvidia.png";
 import mafia from "./mafia/mafia.png";
 import telecom from "./telecom/telecom.png";
-import Codes from "./codes/Codes";
 import CodesPage from "./codes/CodesPage";
 import SmartBuildingsPage from "./buildings/SmartBuildingsPage";
 import GhostsPage from "./ghosts/GhostsPage";
 import OHillPage from "./ohill/OHillPage";
 import DomainsPage from "./domains/DomainsPage";
 import PinballPage from "./pinball/PinballPage";
+import NvidiaPage from "./nvidia/NvidiaPage";
+import BusinessPlanPage from "./pbp/BusinessPlanPage";
+import BSharpPage from "./bsharp/BSharpPage";
+import TelecomPage from "./telecom/TelecomPage";
+import MafiaPage from "./mafia/MafiaPage";
 
 const work_list = [
   {
@@ -72,35 +76,40 @@ const work_list = [
     title: "Nvidia and OpenAI",
     summary: "A collection of short essays I wrote on OpenAI and Nvidia just before AI became mainstream.",
     image: nvidia,
-    link: "nvidia"
+    link: "nvidia",
+    element: <NvidiaPage />
   },
   {
     id: "education",
     title: "New Educational Building",
     summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
     image: poster,
-    link: "education"
+    link: "education",
+    element: <BusinessPlanPage />
   },
   {
     id: "bsharp",
     title: "B-Sharp Enterprise",
     summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
     image: comparison,
-    link: "bsharp"
+    link: "bsharp",
+    element: <BSharpPage />
   },
   {
     id: "mafia",
     title: "Chat-Room Mafia",
     summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
     image: mafia,
-    link: "mafia"
+    link: "mafia",
+    element: <MafiaPage />
   },
   {
     id: "telecom",
     title: "The Rise of T-Mobile",
     summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
     image: telecom,
-    link: "telecom"
+    link: "telecom",
+    element: <TelecomPage />
   },
 ];
 
