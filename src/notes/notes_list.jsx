@@ -18,6 +18,7 @@ import gatsby from "./15/gatsby.jpg";
 import districts from "./16/districts.jpg";
 import trophy from "./17/trophy.jpg";
 import vissim from "./18/vissim.jpg";
+import national from "./19/national.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -36,6 +37,7 @@ import Note15 from "./15/Note15";
 import Note16 from "./16/Note16";
 import Note17 from "./17/Note17";
 import Note18 from "./18/Note18";
+import Note19 from "./19/Note19";
 
 const notes_list = [
     {
@@ -208,6 +210,15 @@ const notes_list = [
       date: "June 28th, 2026",
       element: <Note18 />,
       tags: ["Engineering"]
+    },
+    {
+      title: "A National Team",
+      preview: "The Washington National's historic choke job, and some surprising national soccer teams to celebrate the World Cup.",
+      image: national,
+      link: "national",
+      date: "July 19th, 2026",
+      element: <Note19 />,
+      tags: ["Sports", "Technology"]
     }
 ];
 
