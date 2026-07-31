@@ -213,7 +213,7 @@ const notes_list = [
     },
     {
       title: "A National Team",
-      preview: "The Washington National's historic choke job, and some surprising national soccer teams to celebrate the World Cup.",
+      preview: "The Washington National's historic choking and some surprising national teams highlight an above-average sports summer.",
       image: national,
       link: "national",
       date: "July 19th, 2026",
