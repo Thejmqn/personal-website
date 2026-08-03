@@ -11,7 +11,7 @@ export default function Home() {
       </figure>
       <div className="home-text">
         <h1>Welcome to Joe Moran Online</h1>
-        <h2>Notice: This page is currently under construction.</h2>
+        <h2><em>"A Thousand Miles is not that Far"</em></h2>
         <p>
             Welcome to the Joe Moran homepage. My name, unsurprisingly, is Joe Moran, and I am a fourth-year student at the University of Virginia in Charlottesville.
             This website exists for both professional and personal purposes, which you can learn more about by exploring around.
