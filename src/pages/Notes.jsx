@@ -10,8 +10,9 @@ export default function Notes() {
   return (
     <div className="notes-container">
       <h1>Notes</h1>
-      <p>Welcome to the Notes page. This is not a "blog", but rather observations about what I have been doing recently or something I have been thinking about. There are enough blogs in this world to be honest. The goal of this is to provide some marginally useful, and highly sarcastic, insights into pointless topics (and my life).</p>
-      <p>In the future, I may make some videos about these articles. Stay tuned, possibly.</p>
+      <p>Welcome to the Notes page. This page contains various observations and thoughts about any random topic that I have been thinking about recently. Usually, the topic is tangentially related to either my life or recent world events. 
+        Some notes stick to one particular subject, while others are a lot more free-form. New notes are released on Sundays, with no particular schedule outside of that.</p>
+      <p>Some articles contain videos that complement the written content and are found on my <Link to="https://www.youtube.com/@JoeMoranYT">YouTube channel</Link>. Eventually, I hope to turn more of these articles into videos or podcasts. Stay tuned.</p>
       <div className="tags">
         <span className="tags-label">Sort by:</span>
         {tags.map(t => (

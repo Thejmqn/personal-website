@@ -7,25 +7,25 @@ export default function Home() {
     <div className="home-intro">
       <figure className="home-figure">
         <img src={photo} alt="Photo of me" className="home-profile-image" />
-        <figcaption>Here's a photo of myself staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
+        <figcaption>Here's a photo of me staring at my hand. Looks like I still have all five fingers. That's a relief.</figcaption>
       </figure>
       <div className="home-text">
         <h1>Welcome to Joe Moran Online</h1>
         <h2>Notice: This page is currently under construction.</h2>
         <p>
-            Welcome to the Joe Moran homepage. My name, unsurprisingly, is Joe Moran, and I am a third-year Computer Science major at the University of Virginia in Charlottesville.
+            Welcome to the Joe Moran homepage. My name, unsurprisingly, is Joe Moran, and I am a fourth-year student at the University of Virginia in Charlottesville.
             This website exists for both professional and personal purposes, which you can learn more about by exploring around.
         </p>
         <p>
-          Professionally, I have worked as a software developer for the past three years at various government contractors. I have a passion for software development,
-          system design, and especially network and Internet architecture. To see some of my past projects, 
-          please review my resume or the <Link to="/work">Past Work</Link> page.
+          Professionally, I have worked as a software developer for the past four years at various companies. I have a passion for software development,
+          system design, and especially network and Internet architecture. I also have a deep interest in other engineering disciplines, such as Civil and Transportation Engineering. 
+          To see some of my past projects, please review my <Link to="/work/resume">Resume</Link> or the <Link to="/work">Past Work</Link> page.
         </p>
         <p>
-            On the personal side of things, I have interests in topics such as sports, politics, music, design, and much more. 
-            I make biweekly <Link to="/notes">"Notes"</Link> articles about whatever topics come to mind in my life.
-            I am also working on the <Link to="/misc">Misc</Link> page to describe my interests and hobbies more in-depth. For now, you can check out
-            my <Link to="/contact">Social Media</Link> pages for more information. Thank you for visiting Joe Moran Online.
+            On the personal side of things, I have interests in a wide range of topics subjects from sports to politics to music to design, and many more. 
+            I make semi-regular <Link to="/notes">"Notes"</Link> articles about various topics that are tangentially related to recent events in both my life and the world.
+            Some of these articles also contain supplementary content such as <Link to="https://www.youtube.com/@JoeMoranYT">YouTube videos</Link> or outside links. Check out 
+            the <Link to="/contact">Contacts</Link> page for more information. Thank you for visiting Joe Moran Online.
         </p>
       </div>
     </div>

@@ -8,6 +8,7 @@ import notes_list from "./notes/notes_list.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Contact from "./pages/Contact.jsx";
 import Work from "./pages/Work.jsx";
+import Resume from "./work/resume/ResumePage.jsx";
 import Misc from "./pages/Misc.jsx";
 import Placeholder from "./pages/Placeholder.jsx";
 import work_list from "./work/work_list.jsx";
@@ -48,6 +49,7 @@ export default function App() {
           {misc_list.map(misc => 
               <Route path={"/misc/" + misc.link} element={misc.element} />
           )}
+          <Route path="/work/resume" element={<Resume />} />
         </Routes>
         </main>
         <Footer />
