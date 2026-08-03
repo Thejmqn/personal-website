@@ -1,5 +1,5 @@
 import WorkPage from "../WorkPage";
-import resume from "./Joe_Moran_Public_resume.pdf";
+import resume from "./Joe_Moran_Public_Resume.pdf";
 
 export default function ResumePage() {
   const sections = [
