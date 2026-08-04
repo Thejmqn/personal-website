@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./tools/Navbar.jsx";
 import Home from "./pages/Home.jsx";
@@ -15,6 +15,16 @@ import work_list from "./work/work_list.jsx";
 import misc_list from "./misc/misc_list.jsx";
 import Footer from "./tools/Footer.jsx";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -28,6 +38,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-container">
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <main>
