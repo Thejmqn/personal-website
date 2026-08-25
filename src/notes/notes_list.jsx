@@ -19,6 +19,8 @@ import districts from "./16/districts.jpg";
 import trophy from "./17/trophy.jpg";
 import vissim from "./18/vissim.jpg";
 import national from "./19/national.jpg";
+import rio from "./20/rio.jpg";
+import fork from "./21/fork.jpg";
 import Note1 from "./1/note1";
 import Note2 from "./2/Note2";
 import Note3 from "./3/note3";
@@ -38,6 +40,8 @@ import Note16 from "./16/Note16";
 import Note17 from "./17/Note17";
 import Note18 from "./18/Note18";
 import Note19 from "./19/Note19";
+import Note20 from "./20/Note20";
+import Note21 from "./21/Note21";
 
 const notes_list = [
     {
@@ -219,6 +223,24 @@ const notes_list = [
       date: "July 19th, 2026",
       element: <Note19 />,
       tags: ["Sports", "Technology"]
+    },
+    {
+      title: "As We Remembered Rio",
+      preview: "What's in a name? Rio Road (pronounced Rye-O) provides insight into how names can be both surprising and deceiving.",
+      image: rio,
+      link: "rio",
+      date: "August 9th, 2026",
+      element: <Note20 />,
+      tags: ["Misc"]
+    },
+    {
+      title: "Fork in the Gridiron",
+      preview: "Tony Elliott and UVA football stand at the proverbial \"fork in the road.\" Let's analyze the 2026 UVA football schedule.",
+      image: fork,
+      link: "gridiron",
+      date: "August 23rd, 2026",
+      element: <Note21 />,
+      tags: ["UVA", "Sports"]
     }
 ];
 
