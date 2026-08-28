@@ -2,6 +2,12 @@
 import notes_list from "../notes_list";
 import { Link } from "react-router-dom";
 import './../notes_page.css';
+import ncstate from './ncstate.jpg';
+import standings from './standings.png';
+import tech from './tech.jpg';
+import tony from './tony.jpg';
+import storm from './storm.JPEG';
+import duke from './duke.JPEG';
 export default function Note21() {
     const noteIndex = 21;
     const note = notes_list[noteIndex];
@@ -15,7 +21,126 @@ export default function Note21() {
         <img src={note.image} alt={note.title} className="note-header-image" />
         <h1>{note.title}</h1>
         <div className="note-date">Published on {note.date}</div>
-        <h2>Page Under Development</h2>
+        <h2>An Indiana, or a Colorado?</h2>
+        <p>At almost this exact time last year, I published my <a href="https://www.josephmoran.org/notes/elliott" target="_blank" rel="noopener noreferrer">2025 UVA football predictions</a>, and I started off the analysis with the following quote: “This is a make or break year for Tony Elliott.” It appears as though Coach Elliott took this warning to heart, as he produced the single winningest season in program history. I was more bullish on Virginia football than most last year, predicting them to easily make a bowl game, but the level of success UVA ended up achieving was far beyond what even I imagined back then. Looking back, the writing was on the wall that for the team the “expert analytics” picked to <a href="https://theacc.com/news/2025/7/30/clemson-picked-as-preseason-favorite-in-2025-acc-football-media-poll.aspx" target="_blank" rel="noopener noreferrer">finish 14th in the ACC</a> would have a breakout year. In particular, the massive surge in donations that offseason should have been a sign, especially in the NIL and transfer portal eras, that Virginia was poised to have a conference championship-caliber roster.</p>
+        <p>Some critics, particularly those from Blacksburg, have diminished UVA’s success last year, pointing to the team’s multiple overtime wins as evidence that last year was merely a fluke. They claim that UVA was only a few unlucky plays away from being a mediocre 6-6 team. However, these arguments overlook the fact that Virginia football was, in reality, not actually that lucky last year. UVA was 4-3 in one-score games in the regular season, and 6-0 in multiple-score games. That is not the record of a lucky team. It is the record of a skilled team. I could just as easily claim that UVA was a few plays away from going an undefeated 14-0 last season, as a critic could claim UVA was to going 6-6. If Chandler Morris did not throw an interception against NC State 15 yards away from the goal line on 1st down, Wake Forest did not injure the UVA quarterback 10 minutes into the game, and UVA stopped Duke on 4th down and 1 in overtime in the ACC championship, UVA would have been 14-0.</p>
+        <p>Thus, with the tailwinds of the greatest season in program history, Tony Elliott stares at a proverbial fork in the road. Either UVA can seize the moment and build upon its success from last year, cementing itself as a permanent ACC title contender, or it can revert to the state of consistent disappointment the program has previously languished in. Two teams from 2024, Indiana and Colorado, provide an example of how a team can follow up its breakout year with either the highest highs or the lowest lows. After going 11-2 in 2024 after years of being a bottom of the barrel team, many analysts doubted Indiana could sustain its success in 2025, pointing to its easy 2024 schedule. However, despite starting off the season only being ranked number 20 in the country, they would produce the first 16-0 season since 1894 Yale and win the national championship. On the other hand, Coach Deion Sanders led the usually terrible Colorado Buffaloes to an impressive 9-4 record in the 2024 football season. With hype at an all-time high for Coach Prime and Colorado, the next season would prove to be a disaster, and Colorado would only manage a single conference win.</p>
+        <figure className="note-figure">
+            <img src={tony} alt="Tony Elliott carries the Gator Bowl trophy off the field, ending the winningest season in program history." className="note-inline-image" />
+            <figcaption>Tony Elliott carries the Gator Bowl trophy off the field, ending the winningest season in program history.</figcaption>
+            <span className="image-source"><a href='https://virginiasports.com/imgproxy/WtEp3ErseXNOOtUnGEV_ZwKYQxR5DQIVnFHgrbw6rFA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Zpcmdpbmlhc3BvcnRzLWNvbS1wcm9kLzIwMjUvMTIvMjgva0pYa1NERlFTc1hValp0c3JoMjZGdkxqRTRzbkpZVGlyR0xpazdYdS5qcGc.jpg' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2>2026 UVA Football Predictions</h2>
+        <p>The following is a list of my game-by-game predictions for the 2026 UVA football season. I will give an estimated chance of victory for each game, my predicted score, and the estimated cumulative record based on the given chances of victory. Note that these predictions are generally vague in nature, and are more about giving the general vibe that should be expected when UVA plays each team. Generally speaking, I believe UVA should be able to sustain the success it experienced last season, although one or two upset losses will keep the Cavaliers out of Charlotte. The recruiting strategy of recruiting the most experienced college players, which Tony Elliott has used this offseason, is a recipe for success that few other teams have yet to realize. No other FBS team has as much <a href="https://www.nytimes.com/athletic/7534806/2026/08/24/college-football-teams-experience-chart-2026/" target="_blank" rel="noopener noreferrer">experience by snap count</a> as UVA, who is almost 5,000 snaps ahead of second place, and this should provide enough stability to propel the Cavaliers to a floor of 7 wins.</p>
+        <h2> August 29 - Vs. NC State</h2>
+        <p>The first game of the season will prove to be one of the most important and anticipated games in UVA football history. A victory against the Wolfpack would immediately show that the 2026 Cavaliers are ready to sustain and build upon last year’s success. A loss would immediately lead to doubts that the previous year’s success was merely a fluke. NC State has had UVA’s number in football over the past five years, winning the last four games in a row, including the unusual non-conference in-conference game that took place last year. However, with NC State losing many of its best players to the transfer portal, and Scott Stadium being fully energized, I believe UVA will have the slight upper hand.</p>
+        <p>Chance of Victory: 60%</p>
+        <p>Predicted Score: UVA 24 - NCSU 20</p>
+        <p>Estimated Record: 0.6 W - 0.4 L</p>
+        <figure className="note-figure">
+            <img src={ncstate} alt="Three years ago, UVA lost to NC State on a last-minute field goal at home." className="note-inline-image" />
+            <figcaption>Three years ago, UVA lost to NC State on a last-minute field goal at home.</figcaption>
+            <span className="image-source"><a href='https://virginiasports.com/imgproxy/yVRVL-v6mcurpny8DgY2PRm1CymAIe49xClwU-QsbSo/fit/1500/1500/ce/0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Zpcmdpbmlhc3BvcnRzLWNvbS8yMDIzLzA5LzI4YjdmZDgyLTA4MGE3NjY4LmpwZw.jpg' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2> September 6 - Vs. Norfolk State</h2>
+        <p>As I mentioned in my <a href="https://www.josephmoran.org/notes/kim" target="_blank" rel="noopener noreferrer">protagonists note</a>, I regularly participate in a pick ‘em contest to see who can most closely guess the final score of that day’s UVA football game. Without fail, every time there will be at least one true Tony Elliott believer who picks UVA to win 100 - 0. If there were ever to be a game with a chance to have such a final score, it would be this one. Norfolk State somehow went 1-11 in the FCS last year, with their only win over a D2 school. The only thing UVA fans should be worried about is <a href="https://aldf.org/case/case-study-animal-fighting-michael-vick/" target="_blank" rel="noopener noreferrer">keeping their dogs away</a> from Norfolk State head coach, and former Virginia Tech ”legend,” Michael Vick.</p>
+        <p>Chance of Victory: 99%</p>
+        <p>Predicted Score: UVA 59 - NSU 6</p>
+        <p>Estimated Record: 1.6 W - 0.4 L</p>
+        <h2> September 13 - Vs. West Virginia</h2>
+        <p>This matchup has a unique meaning for those associated with the UVA marching band, such as myself. 24 years ago, in the <a href="https://en.wikipedia.org/wiki/2002_Continental_Tire_Bowl" target="_blank" rel="noopener noreferrer">2002 Continent Tire Bowl</a>, UVA played West Virginia in Charlotte, North Carolina. There, the old Virginia Pep Band performed a tongue-in-cheek skit lightly making fun of West Virginians as hillbillies. The governor of West Virginia, Bob Wise, apparently with nothing better to do, demanded an apology from the band. This resulted in the end of the UVA Pep Band, and the formation of the modern Cavalier Marching Band. This year, West Virginia shows few signs of improvement from its disappointing 2025 team, meaning UVA should be able to take revenge for the loss of the pep band.</p>
+        <p>Chance of Victory: 65%</p>
+        <p>Predicted Score: UVA 20 - WVU 17</p>
+        <p>Estimated Record: 2.25 W - 0.75 L</p>
+        <h2> September 20 - Vs. Delaware</h2>
+        <p>Delaware moved up from the FCS last year and managed an impressive bowl game win over Louisiana. However, against power conference competition such as Colorado and Wake Forest, the Fightin’ Blue Hens stood little chance. While this may be a fun East Coast matchup between the two premier schools of their respective states, there are clear levels to college football, and Virginia in the ACC is currently a step or two above Delaware in Conference USA. Expect an easy victory at home. As a fun fact, Delaware is one of only five universities with both a Super Bowl-winning quarterback (Joe Flacco) and a president (Joe Biden) as alumni. Can you guess the other four?</p>
+        <p>Chance of Victory: 90%</p>
+        <p>Predicted Score: UVA 45 - DEL 10</p>
+        <p>Estimated Record: 3.15 W - 0.85 L</p>
+        <h2> September 26 - At Florida State</h2>
+        <p><a href="https://www.josephmoran.org/notes/march" target="_blank" rel="noopener noreferrer">As I discussed previously</a>, the FSU vs. UVA game last season was responsible for completely changing the program’s trajectory. This year, UVA faces the new challenge of beating a depleted FSU team on the road. Despite how easy it is to make fun of FSU, and their 3-13 conference record over the past two seasons, I do not believe this is a team that should be underestimated. Statistically, FSU was a far better team than their 5-7 record indicated last year. I predict this FSU team will be fired up to get revenge on UVA for ruining their season last year and will come up with a shocking road upset against the overconfident Cavaliers, just as UVA did to the Seminoles last year.</p>
+        <p></p>
+        <p>Chance of Victory: 50%</p>
+        <p>Predicted Score: UVA 24 - FSU 27</p>
+        <p>Estimated Record: 3.65 W - 1.35 L</p>
+        <figure className="note-figure">
+            <img src={storm} alt="Students line up in the fourth quarter against FSU to storm the field. FSU may want revenge" className="note-inline-image" />
+            <figcaption>Students line up in the fourth quarter against FSU to storm the field. FSU may want revenge</figcaption>
+            <span className="image-source"><a href='storm.JPEG' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2> October 4 - Vs. Syracuse</h2>
+        <p>Somewhat surprisingly, this will be the first and only matchup against Syracuse during my entire time as an undergrad at UVA. When bloated conferences have 17 or 18 teams in them, situations like this are bound to occur. Syracuse may have had the single biggest disaster of a season last year in the ACC, losing their last eight games in a row, including a 63-point loss to Notre Dame and a 22-point loss to an equally terrible Boston College team. Syracuse should be better this year, as they were decimated by injuries in 2025, but UVA will still have the upper hand as the clearly more talented team.</p>
+        <p>Chance of Victory: 70%</p>
+        <p>Predicted Score: UVA 27 - CUSE 17</p>
+        <p>Estimated Record: 4.35 W - 1.65 L</p>
+        <h2> October 18 - at SMU</h2>
+        <p>Last year, I mentioned how Louisville was likely to be UVA’s only ranked opponent on the schedule. That ended up not being true, as Louisville ended up just outside the top 25, leaving UVA without having played a single end-of-year ranked opponent. This year, it is surprisingly likely that SMU will again be UVA’s only ranked opponent. Thus, a win or loss in this game will result in major playoff and ACC title game implications. A win against the powerhouse Mustangs would propel UVA to the front of the line for a game in Charlotte. However, I believe SMU’s superior offense is likely to overpower UVA. Fortunately, SMU does not have a strong home-field advantage, suffering from a “wine and cheese fanbase” problem similar to UVA, so I do not consider this game unwinnable.</p>
+        <p>Chance of Victory: 30%</p>
+        <p>Predicted Score: UVA 17 - SMU 24</p>
+        <p>Estimated Record: 4.65 W - 2.35 L</p>
+        <h2> October 25 - Vs. Duke</h2>
+        <p>Traditionally, the UVA-Duke football rivalry has been virtually insignificant compared to the top-tier clash between the two schools' basketball teams. Virginia and Duke are both used to being at the bottom of the ACC in football standings and the top tier in basketball. Last year, the traditional narrative was turned on its head as UVA and Duke squared off in the ACC Championship for both men’s basketball and football. Despite UVA soundly beating Duke just three weeks earlier on the road, the 7-5 Blue Devils would deliver one of the most heartbreaking defeats in UVA football history in the 2025 ACC Championship. This year, Duke has a severely depleted roster, and UVA will be anxious to get revenge in a prime-time Friday-night home game.</p>
+        <p>Chance of Victory: 65%</p>
+        <p>Predicted Score: UVA 27 - DUKE 20</p>
+        <p>Estimated Record: 5.3 W - 2.7 L</p>
+        <figure className="note-figure">
+            <img src={duke} alt="In the first matchup between the two teams last year, a game I was at, UVA was up 31-3 over the Blue Devils at one point." className="note-inline-image" />
+            <figcaption>In the first matchup between the two teams last year, a game I was at, UVA was up 31-3 over the Blue Devils at one point.</figcaption>
+            <span className="image-source"><a href='duke.JPEG' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2> November 1 - At Wake Forest</h2>
+        <p>Last year I made fun of Wake Forest and predicted that the home game against the Demon Deacons would be an “easy win.” Wake Forest responded to this claim by injuring UVA’s star quarterback, Chandler Morris, in the first quarter, severely hampering UVA’s offense for the rest of the game. The home loss to Wake would squash any hopes of UVA getting an at-large CFP bid. Wake Forest is a team that won a surprising number of games last year under first-year head coach Jake Dickert, including handing SMU its first ever ACC regular season loss. I believe the Cavaliers will be ready to avenge their loss last year, and will take out a Wake Forest team that has few fans and a weak home-field advantage in Winston-Salem.</p>
+        <p>Chance of Victory: 65%</p>
+        <p>Predicted Score: UVA 30 - WAKE 17</p>
+        <p>Estimated Record: 5.95 W - 3.05 L</p>
+        <h2> November 8 - Vs. California</h2>
+        <p>Last year, UVA obtained its 8th straight win while playing all the way in Berkeley, California. This year, the Cavaliers will have a much greater advantage over the Golden Bears, with this game taking place in Charlottesville. The 2,500-mile plane ride that Cal has to take, in addition to the strong home-field advantage Scott Stadium has recently demonstrated, should be too much to overcome for the visitors. However, with a great quarterback such as JKS at the helm, a high-scoring upset is still possible. On a side note, I am one of the few people who really likes having Stanford and Cal in the ACC, as despite their distance, their student base, academics, and culture align perfectly with the rest of the conference.</p>
+        <p>Chance of Victory: 65%</p>
+        <p>Predicted Score: UVA 33 - CAL 20</p>
+        <p>Estimated Record: 6.6 W - 3.4 L</p>
+        <h2> November 15 - Vs. North Carolina</h2>
+        <p>Many analysts predict that this game will be a massive win for the Cavaliers, who face a disappointed Belicheck and Hudson-led Tar Heels from “Chapel Bill.” However, those who have paid attention to the history of the South’s Oldest Rivalry should know that the UVA-UNC football rivalry is one that is impossible to predict. Last year, a clearly superior Cavaliers team only beat the Tar Heels by a few inches in overtime. Three years ago, a terrible UVA team that was 0-6 in the FBS beat the tenth-ranked Tar Heels on the road in UVA’s first-ever top-10 road victory. This rivalry always defies traditional expectations, and could be considered a trap game as UVA looks ahead to its big rivalry game. I predict an ugly and low-scoring UVA win, but be on the look out for an upset. Bill Belicheck should never be overlooked.</p>
+        <p>Chance of Victory: 60%</p>
+        <p>Predicted Score: UVA 17 - UNC 10</p>
+        <p>Estimated Record: 7.2 W - 3.8 L</p>
+        <h2> November 29 - At Virginia Tech</h2>
+        <p>After one of the most disastrous years in program history, including a blowout loss to Old Dominion at home, new head coach James Franklin has proclaimed that Virginia Tech <a href="https://www.espn.com/college-football/story/_/id/49377480/james-franklin-set-2026-virginia-tech-won-offseason" target="_blank" rel="noopener noreferrer"><q>won the offseason</q></a>. I guess you can now give them their first national championship in any sport for this incredible accomplishment. Every year I have been at UVA, Virginia Tech has been talked about as an ACC Championship “dark horse” contender, and every year they fall far short. On average, over the past five years Virginia Tech has won <a href="https://www.reddit.com/r/CFB/comments/1vz7w5q/cfb_teams_expected_vs_actual_season_totals/" target="_blank" rel="noopener noreferrer">2 games less than expected</a>. This year, Virginia Tech is once again hyped up as a dark horse contender, and I believe they will once again disappoint. Still, I believe that a disheartened VPI team will still be able to beat a superior UVA team, as they have done many times before. UVA has not beaten VT this millennium in Blacksburg, although this would be the year to do so. I am partially hedging my bets by picking VT here, as if UVA wins this game and heads to Charlotte, I will have no hard feelings.</p>
+        <p>Chance of Victory: 40%</p>
+        <p>Predicted Score: UVA 27 - VT 30</p>
+        <p>Estimated Record: 7.6 W - 4.4 L</p>
+        <figure className="note-figure">
+            <img src={tech} alt="Scott Stadium was nearly sold out for the first time since 2007 against Virginia Tech last year." className="note-inline-image" />
+            <figcaption>Scott Stadium was nearly sold out for the first time since 2007 against Virginia Tech last year.</figcaption>
+            <span className="image-source"><a href='https://virginiasports.com/imgproxy/Z69Kmh0drUN28Pi1QVoYRdrgmtibSVQQLlB7cvF0BEU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Zpcmdpbmlhc3BvcnRzLWNvbS1wcm9kLzIwMjUvMTEvMDQ5XzIwMjUxMTI5X0ZCX0dhbGxlcnlfVlQuanBn.jpg' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+        <h2>2026 ACC Football Standings</h2>
+        <p>All in all, I have UVA with an estimated 9-3 end of season record picking purely by win/loss, although around a 8-4 record when accounting for the occasional random upset. It will be difficult for UVA to sustain consistent double-digit winning seasons due to the nature of college football in the transfer portal era, but it is possible this year. I would give UVA an approximately 30% chance to reach 10 wins, and a 25% chance of returning to Charlotte. On the flip side, I would only give UVA about a 5% chance of missing a bowl game entirely due to the relatively easy schedule.</p>
+        <p>Finally, I have attached in <a href="https://v2.playoffpredictors.com/football/cfb/f4fbdbc5-fb0c-4f1a-9cca-20a9ef623919" target="_blank" rel="noopener noreferrer">this link</a> my game-by-game ACC football predictions. This was made relatively quickly and without much thought, but generally reflects the order I expect teams to finish in. I picked a few upsets here and there, although there is nothing too surprising. Last year, my top standings predictions were relatively accurate, with my only major miss being swapping UVA and Clemson in the final standings. Let’s see what Coach Elliott and the Cavaliers can do this year.</p>
+        <ol className="note-list">
+            <li className="list-element">Miami (11-1, 9-0)</li>
+            <li className="list-element">Southern Methodist (11-1, 8-1)</li>
+            <li className="list-element">NC State (9-3, 7-2)</li>
+            <li className="list-element">Louisville (10-2, 7-2)</li>
+            <li className="list-element">Georgia Tech (9-3, 6-2)</li>
+            <li className="list-element">Pittsburgh (9-3, 6-3)</li>
+            <li className="list-element">Virginia (9-3, 6-3)</li>
+            <li className="list-element">Clemson (8-4, 5-3)</li>
+            <li className="list-element">California (8-4, 5-4)</li>
+            <li className="list-element">Virginia Tech (5-7, 3-6)</li>
+            <li className="list-element">Duke (6-6, 3-6)</li>
+            <li className="list-element">Florida State (4-8, 2-6)</li>
+            <li className="list-element">Syracuse (4-8, 2-7)</li>
+            <li className="list-element">Wake Forest (5-7, 2-7)</li>
+            <li className="list-element">North Carolina (3-9, 1-7)</li>
+            <li className="list-element">Boston College (3-9, 1-7)</li>
+            <li className="list-element">Stanford (3-9, 1-8)</li>
+        </ol>
+        <figure className="note-figure">
+            <img src={standings} alt="My projected ACC standings throughout the 2026 season. Some teams only play 8 conference games" className="note-inline-image" />
+            <figcaption>My projected ACC standings throughout the 2026 season. Some teams only play 8 conference games</figcaption>
+            <span className="image-source"><a href='standings.png' target="_blank" rel="noopener noreferrer">Source</a></span>
+        </figure>
+
         <div className="note-nav">
             {prevNote && <Link to={`${window.location.pathname}/../${prevNote.link}`} className="note-nav-link">← {prevNote.title}</Link>}
             {nextNote && <Link to={`${window.location.pathname}/../${nextNote.link}`} className="note-nav-link">{nextNote.title} →</Link>}
