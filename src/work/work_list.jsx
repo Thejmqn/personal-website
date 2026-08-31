@@ -9,6 +9,7 @@ import comparison from "./bsharp/comparison.png";
 import poster from "./pbp/poster.png";
 import nvidia from "./nvidia/nvidia.png";
 import mafia from "./mafia/mafia.png";
+import bank from "./bank/reduction.png";
 import telecom from "./telecom/telecom.png";
 import CodesPage from "./codes/CodesPage";
 import SmartBuildingsPage from "./buildings/SmartBuildingsPage";
@@ -20,6 +21,7 @@ import NvidiaPage from "./nvidia/NvidiaPage";
 import BusinessPlanPage from "./pbp/BusinessPlanPage";
 import BSharpPage from "./bsharp/BSharpPage";
 import TelecomPage from "./telecom/TelecomPage";
+import BankPage from "./bank/BankPage";
 import MafiaPage from "./mafia/MafiaPage";
 
 const work_list = [
@@ -82,7 +84,7 @@ const work_list = [
   {
     id: "education",
     title: "New Educational Building",
-    summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
+    summary: "A fully complete business plan proposing a new educational building on the UVA Grounds.",
     image: poster,
     link: "education",
     element: <BusinessPlanPage />
@@ -90,7 +92,7 @@ const work_list = [
   {
     id: "bsharp",
     title: "B-Sharp Enterprise",
-    summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
+    summary: "A business pitch and frontend prototype for a suite of music education software products.",
     image: comparison,
     link: "bsharp",
     element: <BSharpPage />
@@ -98,15 +100,23 @@ const work_list = [
   {
     id: "mafia",
     title: "Chat-Room Mafia",
-    summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
+    summary: "A simple chatroom game inspired by the classic social deduction game Mafia.",
     image: mafia,
     link: "mafia",
     element: <MafiaPage />
   },
   {
+    id: "bank",
+    title: "Bank Computing Costs",
+    summary: "Analysis of inefficiencies in the compute and energy efficiency of various banking systems.",
+    image: bank,
+    link: "bank",
+    element: <BankPage />
+  },
+  {
     id: "telecom",
     title: "The Rise of T-Mobile",
-    summary: "Analysis of inefficiencies in the energy and carbon efficiency of various banking systems.",
+    summary: "A business analysis of the telecom industry and the surprising rise of T-Mobile.",
     image: telecom,
     link: "telecom",
     element: <TelecomPage />
