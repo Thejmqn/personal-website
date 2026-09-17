@@ -2,6 +2,8 @@
     "navigationFallback": {
         "rewrite": "/index.html",
         "exclude": [
+            "/sitemap.xml",
+            "/robots.txt",
             "*.{css, scss,js,ico,svg,jpg,gif,png}",
             "assets/*"
         ]
